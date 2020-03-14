@@ -5,9 +5,9 @@
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.5.2 -->
+        Version: 1.5.5 -->
     <script>
-        window.materialVersion = "1.5.2"
+        window.materialVersion = "1.5.5"
         // Delete localstorage with these tags
         window.oldVersion = [
             'codestartv1',
@@ -29,10 +29,18 @@
 
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/>
 
 
 
+    <link rel="dns-prefetch" href="https://hm.baidu.com"/>
 
+    <link rel="dns-prefetch" href="https://s95.cnzz.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
 
 
 
@@ -47,7 +55,7 @@
     
     <title>
         
-            人物:提利昂·兰尼斯特 | 
+            搭建Hexo中遇到的坑和一点心得 | 
         
         Glenn&#39;s Blog
     </title>
@@ -58,7 +66,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="This is Glenn&#39;s Blog">
-    <meta name="keywords" content=",<font size=3>权力的游戏</font>">
+    <meta name="keywords" content=",<font size=4>Hexo搭建</font>">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -82,7 +90,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -219,7 +227,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Glenn&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/">
+    <meta name="msapplication-starturl" content="https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Glenn&#39;s Blog">
@@ -234,16 +242,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/">
+    <meta property="og:url" content="https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="人物:提利昂·兰尼斯特 | Glenn&#39;s Blog">
+    <meta property="og:title" content="搭建Hexo中遇到的坑和一点心得 | Glenn&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="This is Glenn&#39;s Blog">
-    <meta property="og:article:tag" content="&lt;font size=3&gt;权力的游戏&lt;/font&gt;"> 
+    <meta property="og:article:tag" content="&lt;font size=4&gt;Hexo搭建&lt;/font&gt;"> 
 
     
-        <meta property="article:published_time" content="Tue Feb 05 2019 14:29:31 GMT+0800">
-        <meta property="article:modified_time" content="Sat Mar 14 2020 10:36:22 GMT+0800">
+        <meta property="article:published_time" content="Tue Feb 12 2019 17:13:36 GMT+0800">
+        <meta property="article:modified_time" content="Sat Mar 14 2020 10:39:51 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +259,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/index.html" />
+        <link rel="canonical" href="https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +271,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/index.html",
-    "headline": "人物:提利昂·兰尼斯特",
-    "datePublished": "Tue Feb 05 2019 14:29:31 GMT+0800",
-    "dateModified": "Sat Mar 14 2020 10:36:22 GMT+0800",
+    "mainEntityOfPage": "https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/index.html",
+    "headline": "搭建Hexo中遇到的坑和一点心得",
+    "datePublished": "Tue Feb 12 2019 17:13:36 GMT+0800",
+    "dateModified": "Sat Mar 14 2020 10:39:51 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Glenn",
@@ -284,7 +292,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",<font size=3>权力的游戏</font>",
+    "keywords": ",<font size=4>Hexo搭建</font>",
     "description": "This is Glenn&#39;s Blog",
 }
 </script>
@@ -330,7 +338,7 @@
                     
                         <!-- Hamburger Button -->
                         <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
                         </button>
                     
 
@@ -363,7 +371,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#权力的游戏"><span class="post-toc-number">1.</span> <span class="post-toc-text">权力的游戏:</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#什么是Hexo？"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是Hexo？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#准备材料"><span class="post-toc-number">2.</span> <span class="post-toc-text">准备材料</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#安装"><span class="post-toc-number">3.</span> <span class="post-toc-text">安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#我的安装流程"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">我的安装流程</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#遇到的坑"><span class="post-toc-number">4.</span> <span class="post-toc-text">遇到的坑</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#YAML-解析错误"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">YAML 解析错误</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Git-部署问题"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">Git 部署问题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#服务器问题"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">服务器问题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更新完文档并部署后主页无变化"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">更新完文档并部署后主页无变化</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#md文件错误"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">.md文件错误</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一点心得"><span class="post-toc-number">5.</span> <span class="post-toc-text">一点心得</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Git是啥"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">Git是啥?</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Node-js又是啥"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">Node.js又是啥?</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于Hexo-所带的文件结构"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">关于Hexo 所带的文件结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hexo本地测试的时候要注意"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">Hexo本地测试的时候要注意</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于使用Github-Pages进行代码托管"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">关于使用Github Pages进行代码托管</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析与绑定域名"><span class="post-toc-number">5.6.</span> <span class="post-toc-text">解析与绑定域名</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#推荐几个Windows下的配置教程"><span class="post-toc-number">6.</span> <span class="post-toc-text">推荐几个Windows下的配置教程</span></a></li></ol>
     </ul>
     
 
@@ -388,14 +396,14 @@
             <script type="text/ls-javascript" id="post-thumbnail-script">
     var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + ').jpg');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
 </script>
 
         
     
             <p class="article-headline-p">
-                人物:提利昂·兰尼斯特
+                搭建Hexo中遇到的坑和一点心得
             </p>
         </div>
 
@@ -414,7 +422,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Glenn</strong>
-        <span>2月 05, 2019</span>
+        <span>2月 12, 2019</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -438,7 +446,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/font-size-3-%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F-font/" rel="tag"><font size=3>权力的游戏</font></a>
+        <a class="post_tag-link" href="/tags/font-size-4-Hexo%E6%90%AD%E5%BB%BA-font/" rel="tag"><font size=4>Hexo搭建</font></a>
     </ul>
     
 
@@ -466,7 +474,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=人物:提利昂·兰尼斯特&url=https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=搭建Hexo中遇到的坑和一点心得&url=https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -478,7 +486,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -493,7 +501,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=人物:提利昂·兰尼斯特&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=搭建Hexo中遇到的坑和一点心得&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -515,22 +523,86 @@
         <a id="more"></a>
 
 
-<h1 id="权力的游戏"><a href="#权力的游戏" class="headerlink" title="权力的游戏:"></a>权力的游戏:</h1><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171747.jpg" alt=""></p>
-<p> <font size=4> <font color=red>(多图预警)</font>  权游有很多英雄感十足的场景，比如<a href="https://baike.baidu.com/item/%E4%B8%B9%E5%A6%AE%E8%8E%89%E4%B8%9D%C2%B7%E5%9D%A6%E6%A0%BC%E5%88%A9%E5%AE%89/956759?fromtitle=%E9%BE%99%E6%AF%8D&fromid=22101690&fr=aladdin" target="_blank" rel="noopener">龙母</a>走向祭司的火堆祭坛中央，一夜大火散尽三条雏龙横空出世。</font><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171729.jpg" alt=""></p>
-<p> <font size=4> 或者<a href="https://baike.baidu.com/item/%E7%90%BC%E6%81%A9%C2%B7%E9%9B%AA%E8%AF%BA/943448?fr=aladdin" target="_blank" rel="noopener">雪诺</a>初次外出绝经长城，刺杀冰原上的<a href="https://baike.baidu.com/item/%E5%A4%9C%E7%8E%8B/14920265?fr=aladdin" target="_blank" rel="noopener">夜王</a>。</font></p>
-<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171728.jpg" alt=""><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171741.jpg" alt=""><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171745.jpg" alt=""></p>
-<p><font size=4>抑或是临冬城内各路英雄拔剑高呼<font face="黑体"><strong>北境之王</strong></font></font>。<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171743.jpg" alt=""></p>
-<p><font size=4>还是那座壮观的沙漠城市:</font><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171744.jpg" alt=""></p>
-<p><font size=4>  他们都是经典的英雄，一开始就有自己的既定宿命，身怀绝技，形象完美。却像遥远又冰冷的救世主，追求理所当然的强，  沉醉在自己的正义里，囚禁在自己的尊严中，不解世间疾苦。神仙打架起初是极其惊艳，久而久之就是视觉疲劳了。而只有知道弱者之所以为弱者的人，才懂得强者之所以为强者。小恶魔<a href="https://www.baidu.com/sf_bk/item/提利昂·兰尼斯特/867311?fr=aladdin&ms=1&rid=8177297464272424365" target="_blank" rel="noopener">提利昂-兰尼斯特</a>是传统意义上的一个丑角，身材矮小又浪荡不羁，是个充满污点却有血有肉的人物。</font></p>
-<p><font size=4>在剧中小恶魔一直在为自己<strong>和家人</strong>的命运而奋斗，</font><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171733.jpg" alt=""></p>
-<p><font size=4> 但他无论用再大的努力、再多的智慧，也无法改变一个事实–身为侏儒，这一个事实从生下来的那一刻就已经注定了，在他诞生的那一刻就已经被判定为有罪，他在家族中的存在就是在受惩罚。</font></p>
-<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171732.jpg" alt=""></p>
-<p><font size=4>  因此他遭受了许多屈辱不公平。被残酷地对待，他的父亲认为他的存在就是对家族优良血统的讽刺,巴不得他一夜暴毙,他的姐姐因为一个不确定的预言多次欲制他于死地,在家族成员中也只有他的哥哥詹姆是以家人的身份对待他。无论他多么聪明多么智慧，多么富有同情心，他关心底层人，有谋略有手段，他甚至勇敢地冲上前线去战斗，甚至于已经立下战功拯救了城市里面的千千万万的人，但是这一切都会都被忽视。无论他做了多少事情，他都将最终被姐姐和父亲打倒，被踩在脚底下，被踩在烂泥里面，再一次受到屈辱。</font></p>
-<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171736.jpg" alt=""></p>
-<p><font size=4>整部剧于我而震撼的一幕是杰弗里被毒死后君临的那场御前审判，这是一场是非颠倒的审判，目的不在于宣扬正义，而在于宫廷政治斗争。<img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171734.jpg" alt="">作为此次审判的大法官泰温很清楚提利昂并不是杀人元凶但是执意要借题发挥要将提利昂从眼前抹除，踢出自己的权利派对，并利用詹姆的同情心逼迫他放弃誓言进入自己的政治棋盘。于是乎从头到尾这都是一场黑白颠倒的作秀。<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171730.jpg" alt=""></font></p>
-<p><font size=4>这场昏暗戏剧的精彩之处在于提利昂执着而剧烈的反抗，对审判的结果反抗，对君临所有王庭走狗懦弱愚蠢又贪婪的反抗，对表面道貌岸然实则卑鄙龌龊王庭成员的反抗，对自己身为侏儒即是原罪的反抗，被告席上，他以一个侏儒的肉身跳了出来，拒绝了承认罪名后发配长城继续苟活的交易，选择了继续为自己辩证而不惧被泰温处死，绝不服输拒绝投降，毫不留情的揭露了王庭的丑恶，与众人的懦弱。</font></p>
-<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171731.jpg" alt=""></p>
-<p><font size=4>他的辩论有将死之人的坦诚，也有困兽犹斗的挣扎。他刺骨戳心的辩诉完毕后，法庭上顿时鸦雀无声，不同于君临城门将破，被兵临城下时王庭上绝望的死寂，这时寂静是一种所有人心头蒙羞自知理亏的沉默。在那一刻一个侏儒(<a href="https://zhidao.baidu.com/question/1733116673275936427.html" target="_blank" rel="noopener">Half-man</a>) 释放出一股荡气回肠的力量笼罩了整个法庭，击垮了所有龌龊卑鄙的勾当，没有人可以反驳他的辩词。这场御前审判的最后他说道：这个肮脏的法庭得不到他需要的正义，他要求助于天上的诸神,通过比武决斗进行审判。</font><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309171735.jpg" alt=""></p>
+
+<h1 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h1><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175333.jpg" alt=""></p>
+<p><strong>Hexo</strong>是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<a href="https://hexo.io" target="_blank" rel="noopener">Hexo官网传送门</a></p>
+<h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料"></a>准备材料</h1><ul>
+<li><a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+<li>一个编辑器<a href="https://www.sublimetext.com/" target="_blank" rel="noopener">Sublime</a>/<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Vscode</a>/<a href="https://www.baidu.com/link?url=tFRfLbtYEYg9Y_E92ayGmvim7JMjOTD2SAuLAtm4Wgq&wd=&eqid=fde6a2e400029b5c000000045c62a966" target="_blank" rel="noopener">Atom</a>等等</li>
+</ul>
+<p>PS: 由于墙的原因在下载前两者时最好挂个梯子否则可能速度极慢最后还下载失败,也可以从这个仓库下。<a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">传送门</a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>具体安装过程官网写的非常详尽了,故在此不再复述.<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo官网安装传送门</a></p>
+<h2 id="我的安装流程"><a href="#我的安装流程" class="headerlink" title="我的安装流程"></a>我的安装流程</h2><ol>
+<li>买个我喜欢的<a href="https://baike.baidu.com/item/%E5%9F%9F%E5%90%8D/86062?fr=aladdin" target="_blank" rel="noopener">域名</a>  </li>
+<li>下载Node.js、Git</li>
+<li>利用Git安装Hexo，并进行本地测试</li>
+<li>注册github账号,创建一个myname.github.io的仓库</li>
+<li>部署本地文件到Github进行查看</li>
+<li>Github Pages绑定域名</li>
+<li>安装Next主题,并进行优化,然后换了一个主题…</li>
+<li>优化完成开始码字写博客</li>
+</ol>
+<p>PS:当时以为非.cn就能备案就买了两个😵,结果是一样的(直接被墙😭),除非去境外域名商如<a href="https://sg.godaddy.com/" target="_blank" rel="noopener">GoDaddy</a>购买域名。</p>
+<p>这里要进行注解的是，有的教程会让配置<a href="https://baike.baidu.com/item/ssh/10407?fr=aladdin" target="_blank" rel="noopener">SSH</a>密钥，SSH密钥可以为了防止其他人恶意部署文件到你的仓库，使用以后每次部署文件都需要登录Github账号，可以不配置。<br>有的教程中还会要求下载Github客户端，但我觉得没什么卵用。</p>
+<h1 id="遇到的坑"><a href="#遇到的坑" class="headerlink" title="遇到的坑"></a>遇到的坑</h1><h2 id="YAML-解析错误"><a href="#YAML-解析错误" class="headerlink" title="YAML 解析错误"></a>YAML 解析错误</h2><pre><code> S-YAML: incomplete explicit mapping pair; a key node is missed at line 18, 
+ column 29: last_updated: Last updated: %s </code></pre><p>如果 YAML 字符串中包含冒号(<code>:</code>)的话，请加上引号。</p>
+<pre><code>JS-YAML: bad indentation of a mapping entry at line 18, column 31:
+      last_updated:&quot;Last updated: %s&quot;</code></pre><p>确认使用空格进行缩进（Soft tab），并确认冒号后有加上一个空格</p>
+<h2 id="Git-部署问题"><a href="#Git-部署问题" class="headerlink" title="Git 部署问题"></a>Git 部署问题</h2><p><code>fatal: &#39;username.github.io&#39; does not appear to be a git repository</code></p>
+<p>请确认已经在电脑上 配置 git，或改用 HTTPS 库（repository）地址。</p>
+<p><strong>找不到git部署</strong></p>
+<p><code>ERROR Deployer not found: git</code></p>
+<p>在Git Bash命令行中输入: npm install hexo-deployer-git –save</p>
+<h2 id="服务器问题"><a href="#服务器问题" class="headerlink" title="服务器问题"></a>服务器问题</h2><p><code>Error: listen EADDRINUSE</code><br>您可能同时开启两个 Hexo 服务器，或者有其他应用程序正在占用相同的端口，请尝试修改 port 参数，或是在启动 Hexo 服务器时加上 <code>-p</code> 选项。</p>
+<p><code>$ hexo server -p 5000</code></p>
+<h2 id="更新完文档并部署后主页无变化"><a href="#更新完文档并部署后主页无变化" class="headerlink" title="更新完文档并部署后主页无变化"></a>更新完文档并部署后主页无变化</h2><p>有时资料可能没有被更新，或是生成的文件与修改前的相同,可以尝试清除缓存并再执行一次。</p>
+<p><code>$ hexo clean</code></p>
+<h2 id="md文件错误"><a href="#md文件错误" class="headerlink" title=".md文件错误"></a>.md文件错误</h2><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175328.jpg" alt=""><br>这个错误就是在提示我md文件的tags标签处出现了错误，<code>tags：</code>后没加空格,注意.md以及.yml文件中的:后都要加上一个空格,否则很可能在渲染时就会报出上述错误。</p>
+<h1 id="一点心得"><a href="#一点心得" class="headerlink" title="一点心得"></a>一点心得</h1><h2 id="Git是啥"><a href="#Git是啥" class="headerlink" title="Git是啥?"></a>Git是啥?</h2><p>Git是Git Bash不是Github更不是Github Shell，是一个命令行工具，长这个样子。<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175335.jpg" alt=""></p>
+<h2 id="Node-js又是啥"><a href="#Node-js又是啥" class="headerlink" title="Node.js又是啥?"></a>Node.js又是啥?</h2><p>Node 是一个让 JavaScript 运行在服务端的开发平台，它让 JavaScript 成为与PHP、Python、Perl、Ruby 等服务端语言平起平坐的脚本语言。简单的说它是一个语言转化平台,在这里这要将其下载到文件内并不需要了解过多。</p>
+<h2 id="关于Hexo-所带的文件结构"><a href="#关于Hexo-所带的文件结构" class="headerlink" title="关于Hexo 所带的文件结构"></a>关于Hexo 所带的文件结构</h2><pre><code>.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes</code></pre><ul>
+<li>每个Hexo主题文件(theme文件)中有.yml脚本文件，通常称其为主题配置文件;在根目录下也有个.yml文件称为站点配置文件</li>
+<li>优化主题时，修改Hexo根目录下的<code>_config.yml</code>站点配置目录后，要重新启动Hexo再刷新，修改next主题目录下的<code>_config.yml</code>主题配置目录则只需刷新即可.</li>
+</ul>
+<p>站点配置文件:<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175332.jpg" alt=""></p>
+<p>主题配置文件:<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175329.jpg" alt=""></p>
+<h2 id="Hexo本地测试的时候要注意"><a href="#Hexo本地测试的时候要注意" class="headerlink" title="Hexo本地测试的时候要注意"></a>Hexo本地测试的时候要注意</h2><ol>
+<li>Git要运行在本地Hexo的根目录下。</li>
+<li>Git中<code>Ctrl + C</code>是stop的快捷键，不要使用<code>Ctrl + C</code>或<code>Ctrl + V</code>的快捷键，用右键。</li>
+<li>本地测试是<code>Hexo is running</code>,Git显示如下，其他状态便无法连接<pre><code>$ hexo s
+INFO  Start processing
+INFO  Hexo is running at https://localhost:4000/. Press Ctrl+C to stop.</code></pre></li>
+</ol>
+<h2 id="关于使用Github-Pages进行代码托管"><a href="#关于使用Github-Pages进行代码托管" class="headerlink" title="关于使用Github Pages进行代码托管"></a>关于使用Github Pages进行代码托管</h2><ul>
+<li>Github Page提供的300M免费空间可以作为服务器 </li>
+<li>Github page托管Hexo代码时要注意一个github用户名只能有一个io,一个io也只能映射一个域名,一经绑定好域名后再次更换映射的域名可能出现输入相应的io跳转到老域名的情况,反正在我这是这样的，所以绑定io仓库的域名需谨慎。 </li>
+<li>绑定Github Page仓库的名称格式为 <code>Github.yourname.io</code> 不识别大小写但是千万不可打错单词。  </li>
+<li>Github Page建立好后会提供一个IP,获得这个IP的方法就是在<strong>CMD</strong>中Ping一下建立好的Github Page仓库地址。即<code>yourname.github.io</code><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175330.jpg" alt=""></li>
+</ul>
+<h2 id="解析与绑定域名"><a href="#解析与绑定域名" class="headerlink" title="解析与绑定域名"></a>解析与绑定域名</h2><p>在用相应云解析平台提供的dns解析域名时解析一级域名(<a href="http://www.xxx.xx)时需要添加两条记录。一条`www`记录" target="_blank" rel="noopener">www.xxx.xx)时需要添加两条记录。一条`www`记录</a> 一条<code>@</code>记录  添加完解析记录后 将解析完成后的域名如<code>gerlan.cn</code>写入并保存在一个CNAME文件放在Hexo主题文件夹的source文件夹下即可完成域名关联。<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175334.jpg" alt=""><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175331.jpg" alt=""><br><strong>注意:</strong></p>
+<ul>
+<li>在部署前放在根目录中直接使用Git Bash部署到io仓库后不会完成域名关联。</li>
+<li>CNAME是一个没有任何后缀的文件,千万不要加上<code>.txt</code>一类的后缀。</li>
+<li>在填写解析线路时使用默认路线,别使用境外路线，否则你的网页可能还没开始使用就被墙了。</li>
+<li>若使用二级域名则在解析时只需要添加一条记录 xx(即你的二级域名名称)</li>
+</ul>
+<p>最后:<br>貌似有说法是使用Coding Pages 托管网页代码会比Github Pages 快一些,但是Coding的云主机地址也是在海外的所以我觉得应该也差不多。</p>
+<h1 id="推荐几个Windows下的配置教程"><a href="#推荐几个Windows下的配置教程" class="headerlink" title="推荐几个Windows下的配置教程"></a>推荐几个Windows下的配置教程</h1><ul>
+<li><a href="https://jingyan.baidu.com/article/d8072ac47aca0fec95cefd2d.html" target="_blank" rel="noopener">史上最详细“截图”搭建Hexo博客并部署到Github</a></li>
+<li><a href="https://www.jianshu.com/p/93a7ca114b7f" target="_blank" rel="noopener">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">GitHub+Hexo 搭建个人网站详细教程</a></li>
+<li><a href="https://www.jianshu.com/p/3a05351a37dc" target="_blank" rel="noopener">Hexo的Next主题详细配置</a></li>
+<li><a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">Hexo搭建Github静态博客</a></li>
+<li><a href="https://blog.csdn.net/renfufei/article/details/37725057" target="_blank" rel="noopener">创建GitHub技术博客全攻略</a></li>
+</ul>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -539,7 +611,7 @@
                             本作品采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/">https://blog.glennwu.info/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/</a>
+                        <strong>本文链接：</strong><a href="https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/">https://blog.glennwu.info/2019/02/12/Hexo-Problems-01/</a>
                     </p>
                 </blockquote>
         
@@ -562,20 +634,22 @@
     var guest_info = 'nick,mail,link'.split(',').filter(function(item){
         return GUEST_INFO.indexOf(item) > -1
     });
-    var notify = 'true' == true;
-    var verify = 'false' == true;
+    var notify = 'true' === 'true';
+    var verify = 'false' === 'true';
     new Valine({
         el: '.vcomment',
         notify: notify,
         verify: verify,
         appId: "zxTM4OuxBWGEGPxEsp9kiPj8-gzGzoHsz",
         appKey: "B4fy7aDhgYLH2Opgsp3zneFy",
-        placeholder: "我想说__",
+        placeholder: "我想说__      (如果想匿名的话,上面几个信息可以不填)",
         pageSize:'10',
         avatar:'identicon',
-        lang:'zh-cn'
+        lang:'zh-cn',
+        guest_info: guest_info
     });
 </script>
+
 
                 
             </div>
@@ -584,12 +658,12 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/02/12/Hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" id="post_nav-newer" class="prev-content">
+        <a href="/2019/03/05/Visual-Studio-Cod-JavaSE/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            下一篇
+            新篇
         </a>
     
 
@@ -598,8 +672,8 @@
 
     <!-- Next Nav -->
     
-        <a href="/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="post_nav-older" class="next-content">
-            上一篇
+        <a href="/2019/02/12/Hexo-Basic-Operations-01/" id="post_nav-older" class="next-content">
+            旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_forward</i>
@@ -688,7 +762,7 @@
                 
                     <i class="material-icons sidebar-material-icons">format_list_numbered</i>
                 
-                文章类别
+                分类
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
@@ -887,15 +961,18 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
-    
+
     <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
     
 </div>
 
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;2019&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Glenn's Blog
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Glenn's Blog
             
                 <br>
                 
@@ -930,7 +1007,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
 
 
 
@@ -1041,6 +1118,16 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 <script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2019;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
     (function(){
         var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
 
@@ -1049,7 +1136,7 @@ It will not impact the appearance and can give developers a lot of support :)
             lsloader.runInlineScript(item.id,item.id);
         }
     })()
-console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
 </script>
 
                 </main>

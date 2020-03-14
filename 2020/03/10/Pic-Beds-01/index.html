@@ -5,9 +5,9 @@
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.5.2 -->
+        Version: 1.5.5 -->
     <script>
-        window.materialVersion = "1.5.2"
+        window.materialVersion = "1.5.5"
         // Delete localstorage with these tags
         window.oldVersion = [
             'codestartv1',
@@ -29,10 +29,18 @@
 
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/>
 
 
 
+    <link rel="dns-prefetch" href="https://hm.baidu.com"/>
 
+    <link rel="dns-prefetch" href="https://s95.cnzz.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
 
 
 
@@ -82,7 +90,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -219,7 +227,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Glenn&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/">
+    <meta name="msapplication-starturl" content="https://blog.glennwu.info/2020/03/10/Pic-Beds-01/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Glenn&#39;s Blog">
@@ -234,7 +242,7 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/">
+    <meta property="og:url" content="https://blog.glennwu.info/2020/03/10/Pic-Beds-01/">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="如何选择图床 | Glenn&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
@@ -251,7 +259,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/index.html" />
+        <link rel="canonical" href="https://blog.glennwu.info/2020/03/10/Pic-Beds-01/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,7 +271,7 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/index.html",
+    "mainEntityOfPage": "https://blog.glennwu.info/2020/03/10/Pic-Beds-01/index.html",
     "headline": "如何选择图床",
     "datePublished": "Tue Mar 10 2020 00:12:07 GMT+0800",
     "dateModified": "Sat Mar 14 2020 10:36:37 GMT+0800",
@@ -330,7 +338,7 @@
                     
                         <!-- Hamburger Button -->
                         <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
                         </button>
                     
 
@@ -388,7 +396,7 @@
             <script type="text/ls-javascript" id="post-thumbnail-script">
     var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + ').jpg');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
 </script>
 
@@ -466,7 +474,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=如何选择图床&url=https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=如何选择图床&url=https://blog.glennwu.info/2020/03/10/Pic-Beds-01/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -478,7 +486,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.glennwu.info/2020/03/10/Pic-Beds-01/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -493,7 +501,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=如何选择图床&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=如何选择图床&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2020/03/10/Pic-Beds-01/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -579,7 +587,7 @@
                             本作品采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/">https://blog.glennwu.info/2020/03/10/%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E5%9B%BE%E5%BA%8A/</a>
+                        <strong>本文链接：</strong><a href="https://blog.glennwu.info/2020/03/10/Pic-Beds-01/">https://blog.glennwu.info/2020/03/10/Pic-Beds-01/</a>
                     </p>
                 </blockquote>
         
@@ -602,20 +610,22 @@
     var guest_info = 'nick,mail,link'.split(',').filter(function(item){
         return GUEST_INFO.indexOf(item) > -1
     });
-    var notify = 'true' == true;
-    var verify = 'false' == true;
+    var notify = 'true' === 'true';
+    var verify = 'false' === 'true';
     new Valine({
         el: '.vcomment',
         notify: notify,
         verify: verify,
         appId: "zxTM4OuxBWGEGPxEsp9kiPj8-gzGzoHsz",
         appKey: "B4fy7aDhgYLH2Opgsp3zneFy",
-        placeholder: "我想说__",
+        placeholder: "我想说__      (如果想匿名的话,上面几个信息可以不填)",
         pageSize:'10',
         avatar:'identicon',
-        lang:'zh-cn'
+        lang:'zh-cn',
+        guest_info: guest_info
     });
 </script>
+
 
                 
             </div>
@@ -630,8 +640,8 @@
 
     <!-- Next Nav -->
     
-        <a href="/2020/03/04/%E6%91%84%E5%BD%B1%E7%AC%94%E8%AE%B0---%E7%9B%B8%E6%9C%BA%E6%BB%A4%E9%95%9C/" id="post_nav-older" class="next-content">
-            上一篇
+        <a href="/2020/03/04/Camera-01/" id="post_nav-older" class="next-content">
+            旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_forward</i>
@@ -720,7 +730,7 @@
                 
                     <i class="material-icons sidebar-material-icons">format_list_numbered</i>
                 
-                文章类别
+                分类
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
@@ -919,15 +929,18 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
-    
+
     <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
     
 </div>
 
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;2019&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Glenn's Blog
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Glenn's Blog
             
                 <br>
                 
@@ -962,7 +975,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
 
 
 
@@ -1073,6 +1086,16 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 <script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2019;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
     (function(){
         var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
 
@@ -1081,7 +1104,7 @@ It will not impact the appearance and can give developers a lot of support :)
             lsloader.runInlineScript(item.id,item.id);
         }
     })()
-console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
 </script>
 
                 </main>

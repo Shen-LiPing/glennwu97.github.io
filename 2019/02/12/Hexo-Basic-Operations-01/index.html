@@ -5,9 +5,9 @@
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.5.2 -->
+        Version: 1.5.5 -->
     <script>
-        window.materialVersion = "1.5.2"
+        window.materialVersion = "1.5.5"
         // Delete localstorage with these tags
         window.oldVersion = [
             'codestartv1',
@@ -29,10 +29,18 @@
 
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/>
 
 
 
+    <link rel="dns-prefetch" href="https://hm.baidu.com"/>
 
+    <link rel="dns-prefetch" href="https://s95.cnzz.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
 
 
 
@@ -47,7 +55,7 @@
     
     <title>
         
-            Markdown学习笔记 | 
+            Hexo基本使用指南 | 
         
         Glenn&#39;s Blog
     </title>
@@ -58,7 +66,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="This is Glenn&#39;s Blog">
-    <meta name="keywords" content=",<font size=4>Markdown</font>">
+    <meta name="keywords" content=",<font size=4>Hexo</font>">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -82,7 +90,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -219,7 +227,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Glenn&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <meta name="msapplication-starturl" content="https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Glenn&#39;s Blog">
@@ -234,16 +242,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <meta property="og:url" content="https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Markdown学习笔记 | Glenn&#39;s Blog">
+    <meta property="og:title" content="Hexo基本使用指南 | Glenn&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="This is Glenn&#39;s Blog">
-    <meta property="og:article:tag" content="&lt;font size=4&gt;Markdown&lt;/font&gt;"> 
+    <meta property="og:article:tag" content="&lt;font size=4&gt;Hexo&lt;/font&gt;"> 
 
     
-        <meta property="article:published_time" content="Sun Jan 20 2019 13:41:52 GMT+0800">
-        <meta property="article:modified_time" content="Sat Mar 14 2020 11:29:23 GMT+0800">
+        <meta property="article:published_time" content="Tue Feb 12 2019 14:38:23 GMT+0800">
+        <meta property="article:modified_time" content="Sat Mar 14 2020 11:28:30 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +259,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html" />
+        <link rel="canonical" href="https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +271,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html",
-    "headline": "Markdown学习笔记",
-    "datePublished": "Sun Jan 20 2019 13:41:52 GMT+0800",
-    "dateModified": "Sat Mar 14 2020 11:29:23 GMT+0800",
+    "mainEntityOfPage": "https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/index.html",
+    "headline": "Hexo基本使用指南",
+    "datePublished": "Tue Feb 12 2019 14:38:23 GMT+0800",
+    "dateModified": "Sat Mar 14 2020 11:28:30 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Glenn",
@@ -284,7 +292,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",<font size=4>Markdown</font>",
+    "keywords": ",<font size=4>Hexo</font>",
     "description": "This is Glenn&#39;s Blog",
 }
 </script>
@@ -330,7 +338,7 @@
                     
                         <!-- Hamburger Button -->
                         <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
                         </button>
                     
 
@@ -363,7 +371,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一-什么是Markdown"><span class="post-toc-number">1.</span> <span class="post-toc-text">一.什么是Markdown?</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二-写作中常用的Markdown模块"><span class="post-toc-number">2.</span> <span class="post-toc-text">二.写作中常用的Markdown模块</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-标题"><span class="post-toc-number">3.</span> <span class="post-toc-text">1.标题</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一级标题"><span class="post-toc-number">4.</span> <span class="post-toc-text">一级标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二级标题"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">二级标题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三级标题"><span class="post-toc-number">4.1.1.</span> <span class="post-toc-text">三级标题</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-列表"><span class="post-toc-number">5.</span> <span class="post-toc-text">2.列表</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-1无序列表"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">2.1无序列表</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-2有序列表"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">2.2有序列表</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-强调"><span class="post-toc-number">6.</span> <span class="post-toc-text">3.强调</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#6-代码"><span class="post-toc-number">7.</span> <span class="post-toc-text">6.代码</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#7-超链接"><span class="post-toc-number">8.</span> <span class="post-toc-text">7.超链接</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#8-表格"><span class="post-toc-number">9.</span> <span class="post-toc-text">8.表格</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#特殊表格"><span class="post-toc-number">9.1.</span> <span class="post-toc-text">特殊表格</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#9-分割线"><span class="post-toc-number">10.</span> <span class="post-toc-text">9.分割线</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#10-视频插入"><span class="post-toc-number">11.</span> <span class="post-toc-text">10.视频插入:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码1"><span class="post-toc-number">11.1.</span> <span class="post-toc-text">代码1</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#演示"><span class="post-toc-number">11.2.</span> <span class="post-toc-text">演示</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#新建并部署一篇文章"><span class="post-toc-number">1.</span> <span class="post-toc-text">新建并部署一篇文章</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#给新建的文章添加分类和标签"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">给新建的文章添加分类和标签:</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#服务器"><span class="post-toc-number">2.</span> <span class="post-toc-text">服务器</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#模版-Scaffold）"><span class="post-toc-number">3.</span> <span class="post-toc-text">模版(Scaffold）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#设置文章摘要"><span class="post-toc-number">4.</span> <span class="post-toc-text">设置文章摘要</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#部署地址设置"><span class="post-toc-number">5.</span> <span class="post-toc-text">部署地址设置</span></a></li></ol>
     </ul>
     
 
@@ -388,14 +396,14 @@
             <script type="text/ls-javascript" id="post-thumbnail-script">
     var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + ').jpg');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
 </script>
 
         
     
             <p class="article-headline-p">
-                Markdown学习笔记
+                Hexo基本使用指南
             </p>
         </div>
 
@@ -414,7 +422,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Glenn</strong>
-        <span>1月 20, 2019</span>
+        <span>2月 12, 2019</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -438,7 +446,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/font-size-4-Markdown-font/" rel="tag"><font size=4>Markdown</font></a>
+        <a class="post_tag-link" href="/tags/font-size-4-Hexo-font/" rel="tag"><font size=4>Hexo</font></a>
     </ul>
     
 
@@ -466,7 +474,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Markdown学习笔记&url=https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hexo基本使用指南&url=https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -478,7 +486,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -493,7 +501,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=Markdown学习笔记&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=Hexo基本使用指南&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -516,194 +524,52 @@
 
 
 
-<h1 id="一-什么是Markdown"><a href="#一-什么是Markdown" class="headerlink" title="一.什么是Markdown?"></a>一.什么是Markdown?</h1><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175032.png" alt=""></p>
-<p>Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
-<h1 id="二-写作中常用的Markdown模块"><a href="#二-写作中常用的Markdown模块" class="headerlink" title="二.写作中常用的Markdown模块"></a>二.写作中常用的Markdown模块</h1><h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h1><pre><code># 一级标题   
-## 二级标题    
-### 三级标题</code></pre><p>效果如下：</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h1 id="2-列表"><a href="#2-列表" class="headerlink" title="2.列表"></a>2.列表</h1><h2 id="2-1无序列表"><a href="#2-1无序列表" class="headerlink" title="2.1无序列表"></a>2.1无序列表</h2><ul>
-<li>无序列表</li>
-<li>无序列表<h2 id="2-2有序列表"><a href="#2-2有序列表" class="headerlink" title="2.2有序列表"></a>2.2有序列表</h2>有序列表：使用数字接着一个英文句点<br>```</li>
-</ul>
-<ol>
-<li><p>Red </p>
-</li>
-<li><p>Green</p>
-</li>
-<li><p>Blue</p>
-<pre><code></code></pre></li>
-<li><p>Red</p>
-</li>
-<li><p>Green</p>
-</li>
-<li><p>Blue</p>
-</li>
-</ol>
-<h1 id="3-强调"><a href="#3-强调" class="headerlink" title="3.强调"></a>3.强调</h1><ul>
-<li>斜体：<br>```</li>
-</ul>
-<p><em>Coding，让开发更简单</em><br><em>Coding，让开发更简单</em></p>
-<pre><code>*Coding，让开发更简单*
-_Coding，让开发更简单_
-- 加粗:</code></pre><p><strong>Coding，让开发更简单</strong><br><strong>Coding，让开发更简单</strong></p>
-<pre><code>**Coding，让开发更简单**
-__Coding，让开发更简单__
-
-# 4.实现缩进
-使用全角空格(切换快捷键shift+空格)。即：在全角输入状态下直接使用空格键就ok了
-
-# 5.字体大小、颜色、类型
-- &lt; font size=5&gt; Hello
-
-- &lt; font color=red&gt;color
-
-- &lt; font face=“微软雅黑”&gt;微软雅黑
-
-- ** 内容 ** 　(*与内容之间没有空格)
-
-- *内容 * 　　 (*与内容之间没有空格)</code></pre><center><font face="黑体">我是黑体字</font></center>
-<center><font face="微软雅黑">我是微软雅黑</font></center>
-<center><font face="STCAIYUN">我是华文彩云</font><center>
-<center><font color=#0099ff size=12 face="黑体">黑体</font></center>
-<center><font color=#00ffff size=3>null</font></center>
-<center><font color=gray size=5>gray</font></center>
-```
-<center><font face="黑体">我是黑体字</font></center>
-<center><font face="微软雅黑">我是微软雅黑</font></center>
-<center><font face="STCAIYUN">我是华文彩云</font></center>
-<center><font color=#0099ff size=12 face="黑体">黑体</font></center>
-<center><font color=#00ffff size=3>null</font></center>
-<center><font color=gray size=5>gray</font></center>
 
 
-<h1 id="6-代码"><a href="#6-代码" class="headerlink" title="6.代码"></a>6.代码</h1><ul>
-<li>单行代码 键盘左上角的瞥号<br><code>echo $a;</code>   </li>
-<li>代码块<pre><code>(```)
-int a = 0 ;
-System.out.println(“Hello”) ;
-(```)</code></pre></li>
-</ul>
-<h1 id="7-超链接"><a href="#7-超链接" class="headerlink" title="7.超链接"></a>7.超链接</h1><p><code>[超强大的云开发平台Coding](https://coding.net)</code><br><a href="https://coding.net" target="_blank" rel="noopener">超强大的云开发平台Coding</a></p>
-<h1 id="8-表格"><a href="#8-表格" class="headerlink" title="8.表格"></a>8.表格</h1><pre><code>First Header | Second Header | Third Header
------------- | ------------- | ------------
-Content Cell | Content Cell  | Content Cell
-Content Cell | Content Cell  | Content Cell</code></pre><table>
+<h1 id="新建并部署一篇文章"><a href="#新建并部署一篇文章" class="headerlink" title="新建并部署一篇文章"></a>新建并部署一篇文章</h1><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175255.png" alt=""></p>
+<p>hexo n “<a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=24004469_oem_dg&wd=%E5%8D%9A%E5%AE%A2&oq=%25E6%2588%2591%25E7%259A%2584%25E5%258D%259A%25E5%25AE%25A2&rsv_pq=f76a19130001910c&rsv_t=c72e6s2nl7plgSz9YsgundFqcc%2F3M6WoHkO1LeyIiyGV8dcnIarVWpHPBywjtoKjRyEbf95K&rqlang=cn&rsv_enter=1&rsv_sug3=10&rsv_sug1=12&rsv_sug7=101&rsv_sug2=0&inputT=4085&rsv_sug4=4085&rsv_sug=1" target="_blank" rel="noopener">博客文章名</a>“ == hexo new “<strong>博客文章名</strong>“ #新建文章</p>
+<p>hexo g == hexo generate#渲染并生成静态页面至public目录</p>
+<p>hexo s == hexo server #开启本地预览(默认端口4000，’ctrl + c’关闭server)</p>
+<p>hexo d == hexo deploy#部署到服务器(将.deploy目录部署到GitHub等服务器)</p>
+<p>hexo new page “pageName” #新建页面</p>
+<h2 id="给新建的文章添加分类和标签"><a href="#给新建的文章添加分类和标签" class="headerlink" title="给新建的文章添加分类和标签:"></a>给新建的文章添加分类和标签:</h2><pre><code>---
+title: title #文章标题
+date: 2019-02-12 13:47:44 #文章生成时间
+categories: Hexo教程 #文章分类目录 可以省略
+tags: 标签1, 标签2   #文章标签 可以省略
+comments: true/false 
+---</code></pre><h1 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a><a href="https://www.baidu.com/s?wd=%E6%9C%8D%E5%8A%A1%E5%99%A8&tn=24004469_oem_dg&rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">服务器</a></h1><p>hexo server #<strong>Hexo</strong>实时监视文件变动并自动更新，无须重启服务器。</p>
+<p>hexo clean #清除缓存 一般仅用于本地，在网页正常情况下可以忽略此条命令</p>
+<p>hexo server -s #<a href="https://www.baidu.com/s?wd=%E9%9D%99%E6%80%81%E6%A8%A1%E5%BC%8F" target="_blank" rel="noopener">静态模式</a></p>
+<p>hexo server -p 5000 #更改<a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=%E7%AB%AF%E5%8F%A3&oq=%25E9%259D%2599%25E6%2580%2581%25E6%25A8%25A1%25E5%25BC%258F&rsv_pq=ea33dda3000228e2&rsv_t=d4b4xQ66yYvTpWtLFyrqCLKDPWQhVpJoVNp0ul760DfTH8%2BZKi%2By7BTjMro&rqlang=cn&rsv_enter=1&rsv_sug3=6&rsv_sug1=2&rsv_sug7=100&rsv_sug2=0&inputT=1073&rsv_sug4=1073" target="_blank" rel="noopener">端口</a>，当默认4000端口被占用情况下使用。</p>
+<p>hexo server -i 192.168.1.1 #自定义 <a href="https://baike.baidu.com/item/IP/224599" target="_blank" rel="noopener">IP</a></p>
+<h1 id="模版-Scaffold）"><a href="#模版-Scaffold）" class="headerlink" title="模版(Scaffold）"></a>模版(Scaffold）</h1><table>
 <thead>
 <tr>
-<th>First Header</th>
-<th>Second Header</th>
-<th>Third Header</th>
+<th align="left"><strong>变量</strong></th>
+<th align="left"><strong>描述</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-<td>Content Cell</td>
+<td align="left">layout</td>
+<td align="left">布局</td>
 </tr>
 <tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-<td>Content Cell</td>
+<td align="left">title</td>
+<td align="left">标题</td>
 </tr>
 <tr>
-<td>或者也可以让表格两边内容对齐，中间内容居中</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>```</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>First Header</td>
-<td>Second Header</td>
-<td>Third Header</td>
-</tr>
-<tr>
-<td>:———–</td>
-<td>:———–:</td>
-<td>———–:</td>
-</tr>
-<tr>
-<td>Left</td>
-<td>Center</td>
-<td>Right</td>
-</tr>
-<tr>
-<td>Left</td>
-<td>Center</td>
-<td>Right</td>
-</tr>
-<tr>
-<td>```</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>First Header</td>
-<td>Second Header</td>
-<td>Third Header</td>
-</tr>
-<tr>
-<td>:———–</td>
-<td>:———–:</td>
-<td>———–:</td>
-</tr>
-<tr>
-<td>Left</td>
-<td>Center</td>
-<td>Right</td>
-</tr>
-<tr>
-<td>Left</td>
-<td>Center</td>
-<td>Right</td>
+<td align="left">date</td>
+<td align="left">文件建立日期</td>
 </tr>
 </tbody></table>
-<pre><code>a  | b | c  
-:-:|:- |-:
-    居中    |     左对齐      |   右对齐    
-============|=================|=============</code></pre><table>
-<thead>
-<tr>
-<th align="center">a</th>
-<th align="left">b</th>
-<th align="right">c</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">居中</td>
-<td align="left">左对齐</td>
-<td align="right">右对齐</td>
-</tr>
-<tr>
-<td align="center">============</td>
-<td align="left">=================</td>
-<td align="right">=============</td>
-</tr>
-</tbody></table>
-<h2 id="特殊表格"><a href="#特殊表格" class="headerlink" title="特殊表格"></a>特殊表格</h2><p>在线生成HTML代码 <a href="https://www.tablesgenerator.com/" target="_blank" rel="noopener">Tables Generator</a> (国外的站)</p>
-<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175033.png" alt=""></p>
-<h1 id="9-分割线"><a href="#9-分割线" class="headerlink" title="9.分割线"></a>9.分割线</h1><p>使用 3 个以上『-』符号制作分割线</p>
-<pre><code>这是分隔线上部分内容
-
----
-这是分隔线上部分内容</code></pre><p>这是分隔线上部分内容</p>
-<hr>
-<p>这是分隔线上部分内容</p>
-<h1 id="10-视频插入"><a href="#10-视频插入" class="headerlink" title="10.视频插入:"></a>10.视频插入:</h1><p>注：Markdown 语法是不支持直接插入视频的<br>普遍的做法是 插入HTML的 iframe 框架，通过网站自带的分享功能获取，如果没有可以尝试第二种方法<br>第二是伪造播放界面，实质是插入视频图片，然后通过点击跳转到相关页面</p>
-<h2 id="代码1"><a href="#代码1" class="headerlink" title="代码1"></a>代码1</h2><p>注：多数第三方平台不支持插入<code>&lt;iframe&gt;</code>视频</p>
-<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175034.png" alt=""></p>
-<p><code>&lt;iframe height=498 width=910 src=&#39;https://player.youku.com/embed/XMjgzNzM0NTYxNg==&#39; frameborder=0 &#39;allowfullscreen&#39;&gt;&lt;/iframe&gt;</code></p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><iframe height=498 width=510 src='https://player.youku.com/embed/XMjgzNzM0NTYxNg==' frameborder=0 'allowfullscreen'></iframe>
-
-
-
-
-
-
-
+<h1 id="设置文章摘要"><a href="#设置文章摘要" class="headerlink" title="设置文章摘要"></a>设置文章摘要</h1><p><code>以上是文章摘要 &lt;!--more--&gt; 以下是余下全文</code> </p>
+<h1 id="部署地址设置"><a href="#部署地址设置" class="headerlink" title="部署地址设置"></a>部署地址设置</h1><pre><code># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: git@***.github.com:你的用户名/你的仓库名.github.io.git
+  branch: master</code></pre>
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong>
@@ -711,7 +577,7 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
                             本作品采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">https://blog.glennwu.info/2019/01/20/Markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a>
+                        <strong>本文链接：</strong><a href="https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/">https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/</a>
                     </p>
                 </blockquote>
         
@@ -734,20 +600,22 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
     var guest_info = 'nick,mail,link'.split(',').filter(function(item){
         return GUEST_INFO.indexOf(item) > -1
     });
-    var notify = 'true' == true;
-    var verify = 'false' == true;
+    var notify = 'true' === 'true';
+    var verify = 'false' === 'true';
     new Valine({
         el: '.vcomment',
         notify: notify,
         verify: verify,
         appId: "zxTM4OuxBWGEGPxEsp9kiPj8-gzGzoHsz",
         appKey: "B4fy7aDhgYLH2Opgsp3zneFy",
-        placeholder: "我想说__",
+        placeholder: "我想说__      (如果想匿名的话,上面几个信息可以不填)",
         pageSize:'10',
         avatar:'identicon',
-        lang:'zh-cn'
+        lang:'zh-cn',
+        guest_info: guest_info
     });
 </script>
+
 
                 
             </div>
@@ -756,12 +624,12 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2019/02/05/%E4%BA%BA%E7%89%A9---%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F/" id="post_nav-newer" class="prev-content">
+        <a href="/2019/02/12/Hexo-Problems-01/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            下一篇
+            新篇
         </a>
     
 
@@ -770,8 +638,8 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
 
     <!-- Next Nav -->
     
-        <a href="/2019/01/20/Hello-world/" id="post_nav-older" class="next-content">
-            上一篇
+        <a href="/2019/02/05/Game-of-Thrones-01/" id="post_nav-older" class="next-content">
+            旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_forward</i>
@@ -860,7 +728,7 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
                 
                     <i class="material-icons sidebar-material-icons">format_list_numbered</i>
                 
-                文章类别
+                分类
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
@@ -1059,15 +927,18 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
-    
+
     <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
     
 </div>
 
 
         <!--Copyright-->
         <div id="copyright">
-            Copyright&nbsp;©&nbsp;2019&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Glenn's Blog
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Glenn's Blog
             
                 <br>
                 
@@ -1102,7 +973,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
 
 
 
@@ -1213,6 +1084,16 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 <script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2019;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
     (function(){
         var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
 
@@ -1221,7 +1102,7 @@ It will not impact the appearance and can give developers a lot of support :)
             lsloader.runInlineScript(item.id,item.id);
         }
     })()
-console.log('\n %c © Material Theme | Version: 1.5.2 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
 </script>
 
                 </main>
