@@ -390,11 +390,11 @@
     var randomNum;
 
     var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
+    for(var i = 0; i < 6; i++) {
         randomNum = Math.floor(Math.random() * 13 + 1);
 
         locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + '.png');
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + ').jpg');
     $('.post_thumbnail-random').addClass('lazy');
 
         locatePost = locatePost.next();
@@ -582,7 +582,7 @@
      
     <li>
         <a href="#">
-            本站总访问数  
+            本站浏览量  
             <span class="sidebar-badge">
                 <span id="busuanzi_value_site_pv"></span>
             </span>
@@ -590,6 +590,20 @@
     </li>
     
      
+
+     <!--Page Visitor Number  -->
+     
+        <li>
+            <a href="#">
+                本页浏览量  
+                <span class="sidebar-badge">
+                    <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span>
+                      </span>
+                </span>
+            </a>
+        </li>  
+        
+         
 </ul>
 
 

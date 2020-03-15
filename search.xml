@@ -207,11 +207,11 @@
     
     
     <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" alt=""></p><hr><p>我是Glenn, /ɡlɛn/。读音并不重要，你可以按照你自己的想法去读，但如果能按照音标去读就再好不过了。目前就读于ccbupt，<a href="https://baike.baidu.com/item/%E7%89%A9%E8%81%94%E7%BD%91/7306589?fr=aladdin" target="_blank" rel="noopener">物联网</a>工程专业 ，正在各种专业课与<a href="https://zhidao.baidu.com/question/92968602.html" target="_blank" rel="noopener">GRE</a>的苦海里挣扎。参加过几次数学建模，但基本都在套模型也只拿过小奖。准<a href="https://zhidao.baidu.com/question/23539590.html" target="_blank" rel="noopener">cs</a>专业但是不会写代码,是个战略程序员。 </p>]]></content>
       
     </entry>
     
@@ -221,6 +221,17 @@
       <title>comment</title>
       <link href="/comment/index.html"/>
       <url>/comment/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
       
@@ -251,17 +262,6 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>timeline</title>
       <link href="/timeline/index.html"/>
       <url>/timeline/index.html</url>
@@ -273,11 +273,11 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" alt=""></p><hr><p>我是Glenn, /ɡlɛn/。读音并不重要，你可以按照你自己的想法去读，但如果能按照音标去读就再好不过了。目前就读于ccbupt，<a href="https://baike.baidu.com/item/%E7%89%A9%E8%81%94%E7%BD%91/7306589?fr=aladdin" target="_blank" rel="noopener">物联网</a>工程专业 ，正在各种专业课与<a href="https://zhidao.baidu.com/question/92968602.html" target="_blank" rel="noopener">GRE</a>的苦海里挣扎。参加过几次数学建模，但基本都在套模型也只拿过小奖。准<a href="https://zhidao.baidu.com/question/23539590.html" target="_blank" rel="noopener">cs</a>专业但是不会写代码,是个战略程序员。 </p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
       
     </entry>
     
