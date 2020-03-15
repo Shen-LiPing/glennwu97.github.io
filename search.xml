@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hello-World-Material</title>
+      <link href="/2020/03/15/Hello-World-Material/"/>
+      <url>/2020/03/15/Hello-World-Material/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h1 id="Hello-World-Again"><a href="#Hello-World-Again" class="headerlink" title="Hello World Again!"></a>Hello World Again!</h1><p>嗯, 花了两天多的时间总算是把原有博客的内容迁移到这个新主题上。 Say good bye to hexo-theme-ztopic。 原有博客依旧存在, 访问地址为: <a href="gerlanw.github.io">gerlanw.github.io</a>。<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200315233323.jpg" alt=""></p><h1 id="为什么要换主题"><a href="#为什么要换主题" class="headerlink" title="为什么要换主题"></a>为什么要换主题</h1><ol><li>原有的博客框架已经难以满足新的需求。作为一个摄影爱好者当然希望自己的博客上有个相册扩展，而原有的主题并没有做相册扩展。</li><li>原有的主题缺少站内搜索功能, 无法通过关键词快速定位。</li><li>原有主题开发文档太少, 想做改进十分困难。</li></ol><h1 id="为啥要换这个主题"><a href="#为啥要换这个主题" class="headerlink" title="为啥要换这个主题"></a>为啥要换这个主题</h1><ol><li>简约大气，干净清爽。</li><li>主题带有相册的接口。</li><li>页面渲染快即加载速度快。</li><li>朋友某大佬在用这个主题，向他看齐.😐</li><li>Hexo主流文档之一，开发文档多。</li></ol><h1 id="简单介绍一下新的特征"><a href="#简单介绍一下新的特征" class="headerlink" title="简单介绍一下新的特征"></a>简单介绍一下新的特征</h1><ol><li>相册功能; 打开左上角的按钮即可看到</li><li>影视/游戏评论功能; 打开左上角的按钮即可看到</li><li>博客代码同时托管于Coding和Github仓库，实现双线部署。国内线路访问Coding, 国外线路访问Github仓库(目前还在配置中…)。总之国内访问速度快了不少。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hello-World </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hello-World </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何选择图床</title>
       <link href="/2020/03/10/Pic-Beds-01/"/>
       <url>/2020/03/10/Pic-Beds-01/</url>
@@ -207,17 +232,6 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" alt=""></p><hr><p>我是Glenn, /ɡlɛn/。读音并不重要，你可以按照你自己的想法去读，但如果能按照音标去读就再好不过了。目前就读于ccbupt，<a href="https://baike.baidu.com/item/%E7%89%A9%E8%81%94%E7%BD%91/7306589?fr=aladdin" target="_blank" rel="noopener">物联网</a>工程专业 ，正在各种专业课与<a href="https://zhidao.baidu.com/question/92968602.html" target="_blank" rel="noopener">GRE</a>的苦海里挣扎。参加过几次数学建模，但基本都在套模型也只拿过小奖。准<a href="https://zhidao.baidu.com/question/23539590.html" target="_blank" rel="noopener">cs</a>专业但是不会写代码,是个战略程序员。 </p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>comment</title>
       <link href="/comment/index.html"/>
       <url>/comment/index.html</url>
@@ -262,6 +276,17 @@
     
     
     <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>timeline</title>
       <link href="/timeline/index.html"/>
       <url>/timeline/index.html</url>
@@ -273,11 +298,11 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" alt=""></p><hr><p>我是Glenn, /ɡlɛn/。读音并不重要，你可以按照你自己的想法去读，但如果能按照音标去读就再好不过了。目前就读于ccbupt，<a href="https://baike.baidu.com/item/%E7%89%A9%E8%81%94%E7%BD%91/7306589?fr=aladdin" target="_blank" rel="noopener">物联网</a>工程专业 ，正在各种专业课与<a href="https://zhidao.baidu.com/question/92968602.html" target="_blank" rel="noopener">GRE</a>的苦海里挣扎。参加过几次数学建模，但基本都在套模型也只拿过小奖。准<a href="https://zhidao.baidu.com/question/23539590.html" target="_blank" rel="noopener">cs</a>专业但是不会写代码,是个战略程序员。 </p>]]></content>
       
     </entry>
     
