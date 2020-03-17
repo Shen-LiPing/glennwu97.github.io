@@ -257,17 +257,6 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" alt=""></p><h1 id="我是谁"><a href="#我是谁" class="headerlink" title="我是谁?"></a>我是谁?</h1><p>我是Glenn, /ɡlɛn/。读音并不重要，你可以按照你自己的想法去读，但如果能按照音标去读就再好不过了。目前就读于ccbupt，<a href="https://baike.baidu.com/item/%E7%89%A9%E8%81%94%E7%BD%91/7306589?fr=aladdin" target="_blank" rel="noopener">物联网</a>工程专业，大四。 不会写代码也不会写板子, 是个战术工程师。 </p><h1 id="找到我"><a href="#找到我" class="headerlink" title="找到我"></a>找到我</h1><ul><li>Email: <a href="mailto:347989530@qq.com">347989530@qq.com</a> </li><li>QQ: 347989530</li><li>Github: <a href="https://github.com/GerlanW" target="_blank" rel="noopener">https://github.com/GerlanW</a></li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>comment</title>
       <link href="/comment/index.html"/>
       <url>/comment/index.html</url>
@@ -290,17 +279,6 @@
     
     
     <entry>
-      <title>movie-list</title>
-      <link href="/movie-list/index.html"/>
-      <url>/movie-list/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><table><thead><tr><th>剧名</th><th align="right">打分(10分制)</th><th align="right">评价</th><th align="center">传送门</th></tr></thead><tbody><tr><td>毒枭</td><td align="right">7</td><td align="right">魔幻的哥伦比亚生活</td><td align="center"></td></tr><tr><td>绝密毒师</td><td align="right">9</td><td align="right">镜头语言丰富,细节多</td><td align="center"></td></tr></tbody></table>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>game-list</title>
       <link href="/game-list/index.html"/>
       <url>/game-list/index.html</url>
@@ -312,11 +290,33 @@
     
     
     <entry>
+      <title>movie-list</title>
+      <link href="/movie-list/index.html"/>
+      <url>/movie-list/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><table><thead><tr><th>剧名</th><th align="right">打分(10分制)</th><th align="right">评价</th><th align="center">传送门</th></tr></thead><tbody><tr><td>毒枭</td><td align="right">7</td><td align="right">魔幻的哥伦比亚生活</td><td align="center"></td></tr><tr><td>绝密毒师</td><td align="right">9</td><td align="right">镜头语言丰富,细节多</td><td align="center"></td></tr></tbody></table>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" alt=""></p><h1 id="我是谁"><a href="#我是谁" class="headerlink" title="我是谁?"></a>我是谁?</h1><p>我是Glenn, /ɡlɛn/。读音并不重要，你可以按照你自己的想法去读，但如果能按照音标去读就再好不过了。目前就读于ccbupt，<a href="https://baike.baidu.com/item/%E7%89%A9%E8%81%94%E7%BD%91/7306589?fr=aladdin" target="_blank" rel="noopener">物联网</a>工程专业，大四。 不会写代码也不会写板子, 是个战术工程师。 </p><h1 id="找到我"><a href="#找到我" class="headerlink" title="找到我"></a>找到我</h1><ul><li>Email: <a href="mailto:347989530@qq.com">347989530@qq.com</a> </li><li>QQ: 347989530</li><li>Github: <a href="https://github.com/GerlanW" target="_blank" rel="noopener">https://github.com/GerlanW</a></li></ul>]]></content>
       
     </entry>
     
