@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.glennwu.info/2020/03/16/1P3A-Daily-Problem/</loc>
+    
+    <lastmod>2020-03-16T08:19:58.399Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.glennwu.info/comment/index.html</loc>
+    
+    <lastmod>2020-03-15T15:45:45.639Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.glennwu.info/about/index.html</loc>
+    
+    <lastmod>2020-03-15T15:45:08.700Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.glennwu.info/2020/03/15/Hello-World-Material/</loc>
     
     <lastmod>2020-03-15T15:36:35.944Z</lastmod>
@@ -93,23 +114,9 @@
   </url>
   
   <url>
-    <loc>https://blog.glennwu.info/comment/index.html</loc>
-    
-    <lastmod>2020-03-13T08:36:17.257Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.glennwu.info/gallery/index.html</loc>
     
     <lastmod>2020-03-13T00:02:43.900Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.glennwu.info/about/index.html</loc>
-    
-    <lastmod>2020-03-09T15:50:59.166Z</lastmod>
     
   </url>
   
