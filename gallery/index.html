@@ -93,8 +93,6 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?NKhlKQkXw/c66TR5p4wO+w==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
-            
-        
 
     
 
@@ -141,6 +139,25 @@ kbd:active {
 }
 </style>
 
+
+
+
+<!-- 图片的高度限制、水平居中、阴影效果 -->
+<style>
+#post-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: calc(100% - 16px) !important; /* 在左右两边各留下 8px 边距用于显示阴影 */
+    max-height: 480px;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    transition: box-shadow .25s cubic-bezier(.4, 0, .2, 1) !important;
+}
+#post-content img:hover {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+}
+</style>
+
+
 <style>
 mediumZoom(document.querySelectorAll('#post-content img'), {
     margin: 16,
@@ -150,30 +167,75 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
 </style>
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /** 普通指针样式**/
-        body {
-            width: 100vw;
-            height: 100vh;
-            cursor: url('../../鼠标样式包/arr46.png'), auto;
-        }
+<!-- VSCode样式代码块 -->
 
-        /** 链接指针样式**/
-        a:hover {
-            cursor: url('../../鼠标样式包/arr1.png'), pointer;
-        }
-    </style>
-<meta name="generator" content="Hexo 4.2.0"></head>
+<style>
+/* highlight.js: vs2015.css */
+.hljs {
+    /* 其余部分略 */
+    background: #1e1e1e;
+}
 
-<body>
-    <!--给WordPress网站添加鼠标点击爆炸五颜六色特效-->
-    <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
-    <script type="text/javascript" src="djtx.js"></script>
-</body>
+/* Material Theme: style.css*/
+#post-content pre {
+    /* 其余部分略 */
+    background-color: #f7f7f7;
+}
+
+/* 在config_css.ejs中加入的内容，使用!important提高优先级 */
+/* 如果不使用公用CDN库，可以直接修改CSS文件 */
+pre {
+    background-color: #1e1e1e !important;
+    font-size: 15px !important;
+}
+
+.hljs {
+    margin: 0 0 0 0 !important;
+    padding-left: 0 !important;
+    line-height: 1.5em !important;
+}
+
+/* （可选）把highlight.js主题加入的斜体去掉，Visual Studio的注释并不是斜体啊喂！ */
+.hljs-comment {
+    font-style: normal;
+}
+
+
+.hljs {
+    margin: 0 0 0 0 !important;
+    padding-left: 0 !important;
+    line-height: 1.5em !important;
+    list-style: none !important;
+    counter-reset: item; /* 为每个代码块指定名为item的计数器，计数从0开始 */
+}
+
+.hljs > li:before {
+    content: counter(item); /* 在伪元素中显示计数器item的值 */
+    counter-increment: item; /* 计数器item的值+1 */
+    display: inline-block; /* 实现Visual Studio行号右对齐的效果 */
+    text-align: right; /* 实现Visual Studio行号右对齐的效果 */
+    min-width: 2em; /* 文章中行号一般不会超过两位数，所以设定行号区的宽度为两个数字 */
+    margin-right: 1em; /* 行号和代码有一个字符的间隔 */
+    color: #2b91af; /* Visual Studio的行号颜色 */
+}
+
+.hljs > li:last-of-type {
+    display: none;
+}
+
+.hljs > li:last-of-type, code.plain > li:last-of-type, code.text > li:last-of-type {
+    display: none;
+}
+
+code.plain, code.text {
+    list-style: none !important; /* 不显示行号 */
+    color: #dcdcdc; /* 和着色后代码的主要颜色相同 */
+    display: block; /* 左右滚动代码块 */
+    overflow-x: auto; /* 左右滚动代码块 */
+}
+
+</style>
+
 
 
 
@@ -196,6 +258,9 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     transform: rotate(360deg);
 }
 </style>
+
+
+
 
 <!-- Other Styles -->
 <style>
@@ -314,6 +379,8 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/styles/vs2015.min.css">
+
 
 
     <!-- Import jQuery -->
@@ -385,7 +452,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     <!-- Custom Head -->
     
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 
     
@@ -419,9 +486,21 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
             
                 
                     <article class="thumb">
-                        <a href="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" target="_blank" rel="noopener" class="image lazy" data-original="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg"><img class="lazy" data-original="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309235043.jpg" alt="zatu1" /></a>
-                        <h2>zatu1</h2>
-                        <p>这是杂图1</p>
+                        <a href="https://i.loli.net/2020/03/26/PIsQ4jgK86r1eGR.jpg" target="_blank" rel="noopener" class="image lazy" data-original="https://i.loli.net/2020/03/26/PIsQ4jgK86r1eGR.jpg"><img class="lazy" data-original="https://i.loli.net/2020/03/26/PIsQ4jgK86r1eGR.jpg" alt="金华市婺城区_1" /></a>
+                        <h2>金华市婺城区_1</h2>
+                        <p>2020_03_15,DJI御Mavic Mini,金华市婺城区通济桥</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://i.loli.net/2020/03/26/qlQ6TJwBZdPMOSh.jpg" target="_blank" rel="noopener" class="image lazy" data-original="https://i.loli.net/2020/03/26/qlQ6TJwBZdPMOSh.jpg"><img class="lazy" data-original="https://i.loli.net/2020/03/26/qlQ6TJwBZdPMOSh.jpg" alt="金华市婺城区_2" /></a>
+                        <h2>金华市婺城区_2</h2>
+                        <p>2020_03_16,DJI御Mavic Mini,金华市婺城区双龙大桥</p>
+                    </article>
+                
+                    <article class="thumb">
+                        <a href="https://i.loli.net/2020/03/28/AbhtSHpN1Dc5ZCn.jpg" target="_blank" rel="noopener" class="image lazy" data-original="https://i.loli.net/2020/03/28/AbhtSHpN1Dc5ZCn.jpg"><img class="lazy" data-original="https://i.loli.net/2020/03/28/AbhtSHpN1Dc5ZCn.jpg" alt="金华市婺城区_3" /></a>
+                        <h2>金华市婺城区_3</h2>
+                        <p>2020_03_15,DJI御Mavic Mini,金华市婺城区罗店镇</p>
                     </article>
                 
             
@@ -474,4 +553,6 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
 </body>
 
     
+        
+       
 </html>
