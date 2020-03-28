@@ -104,6 +104,101 @@
     
 
     <!-- Config CSS -->
+<!-- 本来为空  用于设置图片阴影效果 -->
+<style>
+#post-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: calc(100% - 16px) !important; /* 在左右两边各留下 8px 边距用于显示阴影 */
+    max-height: 480px;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    transition: box-shadow .25s cubic-bezier(.4, 0, .2, 1) !important;
+}
+#post-content img:hover {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
+}
+</style>
+
+<!-- 本来为空  用于设置kbd键盘按键显示效果 -->
+<style>
+
+kbd {
+    background-color: #fafbfc;
+    border: 1px solid #c6cbd1;
+    border-bottom-color: #959da5;
+    border-radius: 3px;
+    box-shadow: inset 0 -1.5px 0 #959da5;
+    font-size: 75%;
+    color: #444d56;
+    padding: 0 5px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+kbd:hover {
+    color: #000;
+}
+kbd:active {
+    color: #000;
+    box-shadow: inset 0 .5px 0 #666;
+}
+</style>
+
+<style>
+mediumZoom(document.querySelectorAll('#post-content img'), {
+    margin: 16,
+    scrollOffset: 8,
+    background: 'rgba(0, 0, 0, .85)',
+});
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /** 普通指针样式**/
+        body {
+            width: 100vw;
+            height: 100vh;
+            cursor: url('../../鼠标样式包/arr46.png'), auto;
+        }
+
+        /** 链接指针样式**/
+        a:hover {
+            cursor: url('../../鼠标样式包/arr1.png'), pointer;
+        }
+    </style>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <!--给WordPress网站添加鼠标点击爆炸五颜六色特效-->
+    <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+    <script type="text/javascript" src="djtx.js"></script>
+</body>
+
+
+
+<!-- 复制代码按钮的样式和头像旋转的动画-->
+<style>
+.copy-button {
+    float: right;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 8px;
+}
+
+#author-avatar > img,
+.sidebar-image > img {
+    transition: transform .4s ease !important;
+}
+#author-avatar > img:hover,
+.sidebar-image > img:hover {
+    transform: rotate(360deg);
+}
+</style>
 
 <!-- Other Styles -->
 <style>
@@ -326,7 +421,7 @@
     <!-- Custom Head -->
     
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+</head>
 
 
     
@@ -336,7 +431,6 @@
 
                 <!-- Main Container -->
                 <main class="material-layout__content" id="main">
-
                     <!-- Top Anchor -->
                     <div id="top"></div>
 
@@ -399,7 +493,7 @@
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
             <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 29 + 1);
+    var randomNum = Math.floor(Math.random() * 34 + 1);
 
     $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + ').jpg');
     $('.post_thumbnail-random').addClass('lazy');
@@ -1203,6 +1297,46 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+<!-- 复制代码 -->
+<script>
+document.querySelectorAll('pre code').forEach(function (codeBlock) {
+    var copyButton = document.createElement('button');
+    copyButton.innerText = '复制代码';
+    copyButton.onclick = function () {
+        var range = document.createRange();
+        range.selectNodeContents(codeBlock);
+        var selection = document.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('Copy');
+        selection.removeAllRanges();
+        alert('复制成功～☆ﾐ(o*･ω･)ﾉ');
+    }
+    copyButton.classList.add('copy-button');
+    codeBlock.parentNode.appendChild(copyButton);
+});
+</script>
+
+<!-- 图片放大 -->
+<script>
+mediumZoom(document.querySelectorAll('#post-content img'), {
+    margin: 16,
+    scrollOffset: 8,
+    background: 'rgba(0, 0, 0, .85)',
+});
+</script>
+
+
+<!-- 图片放大--新建标签页-->
+// <script>
+// document.querySelectorAll('#post-content img').forEach(function (image) {
+//     image.style.cursor = 'zoom-in';
+//     image.title = image.title || '点击查看大图';
+//     image.onclick = function () { window.open(image.src); };
+// });
+// </script>
+
 <script>
     var copyrightNow = new Date().getFullYear();
     var textContent = document.querySelector('span[year]')
@@ -1224,6 +1358,12 @@ It will not impact the appearance and can give developers a lot of support :)
     })()
 console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
 </script>
+
+
+
+
+
+
 
                     
                 </main>
