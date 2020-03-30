@@ -157,7 +157,6 @@ kbd:active {
 }
 </style>
 
-
 <style>
 mediumZoom(document.querySelectorAll('#post-content img'), {
     margin: 16,
@@ -259,7 +258,18 @@ code.plain, code.text {
 }
 </style>
 
-
+<style>
+canvas {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+}
+</style>
 
 
 <!-- Other Styles -->
@@ -371,7 +381,7 @@ code.plain, code.text {
 <!-- Import Material Icons -->
 
 
-    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?0H5rtp+sRzY2wwLaNkBZ1A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/styles/vs2015.min.css">
@@ -502,10 +512,8 @@ code.plain, code.text {
 
     <!-- Post Thumbnail -->
     
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175032.png">
     
 
         <!-- Post Title -->
@@ -631,7 +639,7 @@ code.plain, code.text {
                 <li>
                     <a href="https://gitee.com//gleenwu/picbed01/raw/master/img/20200330231306.jpg" target="_blank" title="通过微信联系我">
                         
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">contacts</i>
                         
                         通过微信联系我
                     </a>
@@ -640,7 +648,7 @@ code.plain, code.text {
                 <li>
                     <a href="https://gitee.com//gleenwu/picbed01/raw/master/img/20200330232215.jpg" target="_blank" title="通过QQ联系我">
                         
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">textsms</i>
                         
                         通过QQ联系我
                     </a>
@@ -821,6 +829,8 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Theme Material -->
 
 
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=461347460&auto=1&height=66"></iframe>
+
 <!-- Help & Support -->
 <!--
 
@@ -911,6 +921,8 @@ It will not impact the appearance and can give developers a lot of support :)
 </div>
 
 
+
+        
         <!--Copyright-->
         <div id="copyright">
             Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Glenn's Blog
@@ -920,8 +932,24 @@ It will not impact the appearance and can give developers a lot of support :)
                     Hosted by <a href="https://pages.coding.me" target="_blank" rel="noopener" style="font-weight:bold">Coding Pages</a>
                 
             
-        </div>
-
+            <br>
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span><script>
+            var now = new Date();
+            function createtime() {
+              var grt= new Date("02/20/2019 20:44:00");//此处修改你的建站时间或者网站上线时间
+              now.setTime(now.getTime()+250);
+              days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+              hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+              if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+              mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+              seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+              snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+              document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+            }
+            setInterval("createtime()",250);</script>
+       
+    </div>
         <!-- Paradox Footer Right Section -->
 
         <!--
@@ -940,6 +968,8 @@ It will not impact the appearance and can give developers a lot of support :)
         </div>
     
 
+
+   
     <!-- footer.ejs
     <div>
     <script async src="https://cdn.busuanzi.ibruce.info/cdn/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -1058,6 +1088,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
 <script>
     var copyrightNow = new Date().getFullYear();
     var textContent = document.querySelector('span[year]')
@@ -1117,7 +1148,7 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
 
 
  <!-- 点击图片放大 -->
-    
+
     
     
     
@@ -1136,3 +1167,183 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
 
 <!--浏览器搞笑标题-->
 <script type="text/javascript" src="\js\FunnyTitle.js"></script>
+
+<!--禁用鼠标右键与F12-->
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
+
+
+<!-- 可随鼠标滚动并吸附的线条 -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script> -->
+
+<!-- 背景出现樱花雨 -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script> -->
+
+<!-- 背景出现雪花 -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js"></script> -->
+
+
+<!-- 背景出现代码雨 -->
+<!-- <canvas id="canvas" width="1440" height="900" ></canvas>
+<script type="text/javascript" src="/js/DigitalRain.js"></script> -->
+
+<!-- 左边出现2333娘 -->
+<!-- <script src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/live2d/autoload.js"></script> -->
+
+
+<!-- 点击鼠标出现彩色颜料的爆炸效果 -->
+<script>
+class Circle {
+    constructor({ origin, speed, color, angle, context }) {
+      this.origin = origin
+      this.position = { ...this.origin }
+      this.color = color
+      this.speed = speed
+      this.angle = angle
+      this.context = context
+      this.renderCount = 0
+    }
+  
+    draw() {
+      this.context.fillStyle = this.color
+      this.context.beginPath()
+      this.context.arc(this.position.x, this.position.y, 2, 0, Math.PI * 2)
+      this.context.fill()
+    }
+  
+    move() {
+      this.position.x = (Math.sin(this.angle) * this.speed) + this.position.x
+      this.position.y = (Math.cos(this.angle) * this.speed) + this.position.y + (this.renderCount * 0.3)
+      this.renderCount++
+    }
+  }
+  
+  class Boom {
+    constructor ({ origin, context, circleCount = 10, area }) {
+      this.origin = origin
+      this.context = context
+      this.circleCount = circleCount
+      this.area = area
+      this.stop = false
+      this.circles = []
+    }
+  
+    randomArray(range) {
+      const length = range.length
+      const randomIndex = Math.floor(length * Math.random())
+      return range[randomIndex]
+    }
+  
+    randomColor() {
+      const range = ['8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+      return '#' + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range)
+    }
+  
+    randomRange(start, end) {
+      return (end - start) * Math.random() + start
+    }
+  
+    init() {
+      for(let i = 0; i < this.circleCount; i++) {
+        const circle = new Circle({
+          context: this.context,
+          origin: this.origin,
+          color: this.randomColor(),
+          angle: this.randomRange(Math.PI - 1, Math.PI + 1),
+          speed: this.randomRange(1, 6)
+        })
+        this.circles.push(circle)
+      }
+    }
+  
+    move() {
+      this.circles.forEach((circle, index) => {
+        if (circle.position.x > this.area.width || circle.position.y > this.area.height) {
+          return this.circles.splice(index, 1)
+        }
+        circle.move()
+      })
+      if (this.circles.length == 0) {
+        this.stop = true
+      }
+    }
+  
+    draw() {
+      this.circles.forEach(circle => circle.draw())
+    }
+  }
+  
+  class CursorSpecialEffects {
+    constructor() {
+      this.computerCanvas = document.createElement('canvas')
+      this.renderCanvas = document.createElement('canvas')
+  
+      this.computerContext = this.computerCanvas.getContext('2d')
+      this.renderContext = this.renderCanvas.getContext('2d')
+  
+      this.globalWidth = window.innerWidth
+      this.globalHeight = window.innerHeight
+  
+      this.booms = []
+      this.running = false
+    }
+  
+    handleMouseDown(e) {
+      const boom = new Boom({
+        origin: { x: e.clientX, y: e.clientY },
+        context: this.computerContext,
+        area: {
+          width: this.globalWidth,
+          height: this.globalHeight
+        }
+      })
+      boom.init()
+      this.booms.push(boom)
+      this.running || this.run()
+    }
+  
+    handlePageHide() {
+      this.booms = []
+      this.running = false
+    }
+  
+    init() {
+      const style = this.renderCanvas.style
+      style.position = 'fixed'
+      style.top = style.left = 0
+      style.zIndex = '999999999999999999999999999999999999999999'
+      style.pointerEvents = 'none'
+  
+      style.width = this.renderCanvas.width = this.computerCanvas.width = this.globalWidth
+      style.height = this.renderCanvas.height = this.computerCanvas.height = this.globalHeight
+  
+      document.body.append(this.renderCanvas)
+  
+      window.addEventListener('mousedown', this.handleMouseDown.bind(this))
+      window.addEventListener('pagehide', this.handlePageHide.bind(this))
+    }
+  
+    run() {
+      this.running = true
+      if (this.booms.length == 0) {
+        return this.running = false
+      }
+  
+      requestAnimationFrame(this.run.bind(this))
+  
+      this.computerContext.clearRect(0, 0, this.globalWidth, this.globalHeight)
+      this.renderContext.clearRect(0, 0, this.globalWidth, this.globalHeight)
+  
+      this.booms.forEach((boom, index) => {
+        if (boom.stop) {
+          return this.booms.splice(index, 1)
+        }
+        boom.move()
+        boom.draw()
+      })
+      this.renderContext.drawImage(this.computerCanvas, 0, 0, this.globalWidth, this.globalHeight)
+    }
+  }
+  
+  const cursorSpecialEffects = new CursorSpecialEffects()
+  cursorSpecialEffects.init()
+</script>
