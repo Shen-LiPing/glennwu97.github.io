@@ -90,7 +90,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?y/962hLpSOX4/XjNU0IBeQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?1drtyrzlCFToMk0+wvB4EA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -675,6 +675,12 @@ code.plain, code.text {
 
     <!-- Share Telegram -->
     
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://blog.glennwu.info/2020/03/23/My-first-drone/index.html&text=无人机失联记:大疆-御Mavic Mini" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
 </ul>
 
     
@@ -818,11 +824,29 @@ code.plain, code.text {
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="mailto: glennwy@qq.com" target="_blank" title="Email Me">
+                    <a href="mailto:glennwy@qq.com" target="_blank" title="通过邮件联系我">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
-                        Email Me
+                        通过邮件联系我
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://gitee.com//gleenwu/picbed01/raw/master/img/20200330231306.jpg" target="_blank" title="通过微信联系我">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        通过微信联系我
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://gitee.com//gleenwu/picbed01/raw/master/img/20200330232215.jpg" target="_blank" title="通过QQ联系我">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        通过QQ联系我
                     </a>
                 </li>
             
@@ -928,11 +952,11 @@ code.plain, code.text {
         
     
         <li>
-            <a href="/comment" title="评论">
+            <a href="/comment" title="留言板">
                 
                     <i class="material-icons sidebar-material-icons">comment</i>
                 
-                评论
+                留言板
             </a>
         </li>
         
@@ -980,10 +1004,6 @@ code.plain, code.text {
          
 </ul>
 
-
-
-<!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span >本站总访问量: <span id="busuanzi_value_site_pv"></span>次</span> -->
 
 
 
@@ -1134,7 +1154,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- footer.ejs
     <div>
-    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script async src="https://cdn.busuanzi.ibruce.info/cdn/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <div>
     本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
     你是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
@@ -1180,10 +1200,6 @@ It will not impact the appearance and can give developers a lot of support :)
 </script>
 
 
-
-    
-        <script>lsloader.load("sm_js","/js/smoothscroll.js?lOy/ACj5suSNi7ZVFVbpFQ==", true)</script>
-    
 
 
 
@@ -1254,42 +1270,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-<!-- 复制代码 -->
-<script>
-document.querySelectorAll('pre code').forEach(function (codeBlock) {
-    var copyButton = document.createElement('button');
-    copyButton.innerText = '复制代码';
-    copyButton.onclick = function () {
-        var range = document.createRange();
-        range.selectNodeContents(codeBlock);
-        var selection = document.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        document.execCommand('Copy');
-        selection.removeAllRanges();
-        alert('复制成功');
-    }
-    copyButton.classList.add('copy-button');
-    codeBlock.parentNode.appendChild(copyButton);
-});
-</script>
-
-<!-- 点击图片放大 -->
-
-
-
-
-<!-- 使用highlight.js修改代码样式-->
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/highlight.min.js"></script> 
-
-<script>
-    hljs.initHighlightingOnLoad();  
-    $("pre code").each(function(){
-        $(this).html("<li>" + $(this).html().replace(/\n/g,"\n</li><li>") +"\n</li>");
-    });
-</script>
-
-
 <script>
     var copyrightNow = new Date().getFullYear();
     var textContent = document.querySelector('span[year]')
@@ -1317,12 +1297,54 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
 
 
 
+<!-- 复制代码 -->
+<script>
+    document.querySelectorAll('pre code').forEach(function (codeBlock) {
+        var copyButton = document.createElement('button');
+        copyButton.innerText = '复制代码';
+        copyButton.onclick = function () {
+            var range = document.createRange();
+            range.selectNodeContents(codeBlock);
+            var selection = document.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand('Copy');
+            selection.removeAllRanges();
+            alert('复制成功');
+        }
+        copyButton.classList.add('copy-button');
+        codeBlock.parentNode.appendChild(copyButton);
+    });
+    </script>
+    
+ <!-- 使用highlight.js修改代码显示样式-->
+ <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/highlight.min.js"></script> 
+    
+ <script>
+     hljs.initHighlightingOnLoad();  
+     $("pre code").each(function(){
+         $(this).html("<li>" + $(this).html().replace(/\n/g,"\n</li><li>") +"\n</li>");
+     });
+ </script>
+
+
+ <!-- 点击图片放大 -->
+    
+    
+    
+    
+   
+    
 
                     
                 </main>
             </div>
         </body>
     
-        
-       
+            
 </html>
+
+<!-- 点击出现彩色气球爆炸效果 -->
+
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="\js\FunnyTitle.js"></script>
