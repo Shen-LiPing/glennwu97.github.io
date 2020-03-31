@@ -99,7 +99,7 @@
     
 
     <!-- Config CSS -->
-<!-- 本来为空  用于设置图片阴影效果 -->
+<!-- 本来为空  用于设置图片的高度限制、水平居中、阴影效果 -->
 <style>
 #post-content img {
     display: block;
@@ -141,29 +141,6 @@ kbd:active {
 
 
 
-
-<!-- 图片的高度限制、水平居中、阴影效果 -->
-<style>
-#post-content img {
-    display: block;
-    margin: 0 auto;
-    max-width: calc(100% - 16px) !important; /* 在左右两边各留下 8px 边距用于显示阴影 */
-    max-height: 480px;
-    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
-    transition: box-shadow .25s cubic-bezier(.4, 0, .2, 1) !important;
-}
-#post-content img:hover {
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2), 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
-}
-</style>
-
-<style>
-mediumZoom(document.querySelectorAll('#post-content img'), {
-    margin: 16,
-    scrollOffset: 8,
-    background: 'rgba(0, 0, 0, .85)',
-});
-</style>
 
 
 <!-- VSCode样式代码块 -->
@@ -258,18 +235,7 @@ code.plain, code.text {
 }
 </style>
 
-<style>
-canvas {
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  min-width: 100%;
-  min-height: 100%;
-  height: auto;
-  width: auto;
-  z-index: -1;
-}
-</style>
+
 
 
 <!-- Other Styles -->
@@ -472,7 +438,13 @@ canvas {
                 s.parentNode.insertBefore(bp, s);
             })();
             </script>
-        
+
+          <!-- 引入图片放大器Fancybox库  -->
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 
@@ -566,7 +538,7 @@ canvas {
         
     
 
-    
+     -->
 
     
         <script type="text/ls-javascript" id="thumbnail-script">
@@ -619,6 +591,8 @@ canvas {
         <b class="caret"></b>
     </a>
 </div>
+
+
 
 
         <!-- Sidebar Navigation  -->
@@ -829,7 +803,11 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Theme Material -->
 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=461347460&auto=1&height=66"></iframe>
+
+<!-- 网易云音乐外链 -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=461347460&auto=0&height=66"></iframe>
+
+
 
 <!-- Help & Support -->
 <!--
@@ -952,11 +930,14 @@ It will not impact the appearance and can give developers a lot of support :)
               mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
               seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
               snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-              document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+              document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
               document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
             }
             setInterval("createtime()",250);</script>
-       
+            
+        <!-- 图片放大器Fancybox的js代码     -->
+       <script src="/js/warp.js"></script>
+
     </div>
         <!-- Paradox Footer Right Section -->
 
@@ -967,7 +948,6 @@ It will not impact the appearance and can give developers a lot of support :)
         很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
         它不会影响美观并可以给开发者很大的支持。 :)
         -->
-
         <div class="mdl-mini-footer--right-section">
             <div>
                 <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
@@ -977,20 +957,11 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
 
-   
-    <!-- footer.ejs
-    <div>
-    <script async src="https://cdn.busuanzi.ibruce.info/cdn/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <div>
-    本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
-    你是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
-    </div>
-    </div> -->
-
 </footer>
 
 
                     <!-- Import JS File -->
+
 
 
     <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
@@ -1122,8 +1093,6 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
 
 
 
-
-
 <!-- 复制代码 -->
 <script>
     document.querySelectorAll('pre code').forEach(function (codeBlock) {
@@ -1154,11 +1123,20 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
      });
  </script>
 
-
  <!-- 点击图片放大 -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"> </script>
 
-    
-    
+<script>
+mediumZoom(document.querySelectorAll('#post-content img'), {
+    margin: 16,
+    scrollOffset: 8,
+    background: 'rgba(0, 0, 0, .85)',
+});
+</script>    -->
+
+
+
+
     
    
     
@@ -1171,16 +1149,27 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
             
 </html>
 
-<!-- 点击出现彩色气球爆炸效果 -->
 
-<!--浏览器搞笑标题-->
+
+<!--浏览器动态标题-->
 <script type="text/javascript" src="\js\FunnyTitle.js"></script>
 
 <!--禁用鼠标右键与F12-->
 <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
+<!--预加载-->
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 
-<!-- 可随鼠标滚动并吸附的线条 -->
+
+<!-- 点击鼠标出现彩色颜料的爆炸效果 -->
+<script src="\js\mouse-click.js"></script>
+
+<!-- 天气插件 -->
+<script type="text/javascript">
+    WIDGET = {FID: 'nYrdlNWPvE'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    
 <!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script> -->
 
 <!-- 背景出现樱花雨 -->
@@ -1198,160 +1187,4 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
 <!-- <script src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/live2d/autoload.js"></script> -->
 
 
-<!-- 点击鼠标出现彩色颜料的爆炸效果 -->
-<script>
-class Circle {
-    constructor({ origin, speed, color, angle, context }) {
-      this.origin = origin
-      this.position = { ...this.origin }
-      this.color = color
-      this.speed = speed
-      this.angle = angle
-      this.context = context
-      this.renderCount = 0
-    }
-  
-    draw() {
-      this.context.fillStyle = this.color
-      this.context.beginPath()
-      this.context.arc(this.position.x, this.position.y, 2, 0, Math.PI * 2)
-      this.context.fill()
-    }
-  
-    move() {
-      this.position.x = (Math.sin(this.angle) * this.speed) + this.position.x
-      this.position.y = (Math.cos(this.angle) * this.speed) + this.position.y + (this.renderCount * 0.3)
-      this.renderCount++
-    }
-  }
-  
-  class Boom {
-    constructor ({ origin, context, circleCount = 10, area }) {
-      this.origin = origin
-      this.context = context
-      this.circleCount = circleCount
-      this.area = area
-      this.stop = false
-      this.circles = []
-    }
-  
-    randomArray(range) {
-      const length = range.length
-      const randomIndex = Math.floor(length * Math.random())
-      return range[randomIndex]
-    }
-  
-    randomColor() {
-      const range = ['8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
-      return '#' + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range) + this.randomArray(range)
-    }
-  
-    randomRange(start, end) {
-      return (end - start) * Math.random() + start
-    }
-  
-    init() {
-      for(let i = 0; i < this.circleCount; i++) {
-        const circle = new Circle({
-          context: this.context,
-          origin: this.origin,
-          color: this.randomColor(),
-          angle: this.randomRange(Math.PI - 1, Math.PI + 1),
-          speed: this.randomRange(1, 6)
-        })
-        this.circles.push(circle)
-      }
-    }
-  
-    move() {
-      this.circles.forEach((circle, index) => {
-        if (circle.position.x > this.area.width || circle.position.y > this.area.height) {
-          return this.circles.splice(index, 1)
-        }
-        circle.move()
-      })
-      if (this.circles.length == 0) {
-        this.stop = true
-      }
-    }
-  
-    draw() {
-      this.circles.forEach(circle => circle.draw())
-    }
-  }
-  
-  class CursorSpecialEffects {
-    constructor() {
-      this.computerCanvas = document.createElement('canvas')
-      this.renderCanvas = document.createElement('canvas')
-  
-      this.computerContext = this.computerCanvas.getContext('2d')
-      this.renderContext = this.renderCanvas.getContext('2d')
-  
-      this.globalWidth = window.innerWidth
-      this.globalHeight = window.innerHeight
-  
-      this.booms = []
-      this.running = false
-    }
-  
-    handleMouseDown(e) {
-      const boom = new Boom({
-        origin: { x: e.clientX, y: e.clientY },
-        context: this.computerContext,
-        area: {
-          width: this.globalWidth,
-          height: this.globalHeight
-        }
-      })
-      boom.init()
-      this.booms.push(boom)
-      this.running || this.run()
-    }
-  
-    handlePageHide() {
-      this.booms = []
-      this.running = false
-    }
-  
-    init() {
-      const style = this.renderCanvas.style
-      style.position = 'fixed'
-      style.top = style.left = 0
-      style.zIndex = '999999999999999999999999999999999999999999'
-      style.pointerEvents = 'none'
-  
-      style.width = this.renderCanvas.width = this.computerCanvas.width = this.globalWidth
-      style.height = this.renderCanvas.height = this.computerCanvas.height = this.globalHeight
-  
-      document.body.append(this.renderCanvas)
-  
-      window.addEventListener('mousedown', this.handleMouseDown.bind(this))
-      window.addEventListener('pagehide', this.handlePageHide.bind(this))
-    }
-  
-    run() {
-      this.running = true
-      if (this.booms.length == 0) {
-        return this.running = false
-      }
-  
-      requestAnimationFrame(this.run.bind(this))
-  
-      this.computerContext.clearRect(0, 0, this.globalWidth, this.globalHeight)
-      this.renderContext.clearRect(0, 0, this.globalWidth, this.globalHeight)
-  
-      this.booms.forEach((boom, index) => {
-        if (boom.stop) {
-          return this.booms.splice(index, 1)
-        }
-        boom.move()
-        boom.draw()
-      })
-      this.renderContext.drawImage(this.computerCanvas, 0, 0, this.globalWidth, this.globalHeight)
-    }
-  }
-  
-  const cursorSpecialEffects = new CursorSpecialEffects()
-  cursorSpecialEffects.init()
-</script>
+
