@@ -1,8 +1,9 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
-    mini: true,
+    narrow: true,
    // autoplay: false,  //吸盘模式
+   // mini: true, //微型带图标模式
     audio: [
 	  {
         name: 'Shelter',
