@@ -417,7 +417,7 @@ code.plain, code.text {
             "@type": "ImageObject",
             "url": "/img/avatar.png"
         },
-        "description": "你好呀,欢迎来我的博客!"
+        "description": "世间万物 希望最美"
     },
     "publisher": {
         "@type": "Organization",
@@ -907,7 +907,9 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
                 <i class="material-icons">arrow_back</i>
             </button>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
+            上一篇
+            <!-- ：
+            theme.footer_text -->
         </a>
     
 
@@ -917,7 +919,7 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
     <!-- Next Nav -->
     
         <a href="/2019/01/20/Hello-World/" id="post_nav-older" class="next-content">
-            旧篇
+            下一篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_forward</i>
@@ -1033,7 +1035,7 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Hello-World/">Hello-World<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Visual-Studio-Code/">Visual Studio Code<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%89%A7%E8%AF%84/">剧评<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%9B%BE%E5%BA%8A/">图床<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%91%84%E5%BD%B1/">摄影<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A0%E4%BA%BA%E6%9C%BA/">无人机<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/1P3A/">1P3A<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hello-World/">Hello-World<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Visual-Studio-Code/">Visual Studio Code<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%89%A7%E8%AF%84/">剧评<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%9B%BE%E5%BA%8A/">图床<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%91%84%E5%BD%B1/">摄影<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A0%E4%BA%BA%E6%9C%BA/">无人机<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -1121,7 +1123,7 @@ Content Cell | Content Cell  | Content Cell</code></pre><table>
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">10</span>
+                <span class="sidebar-badge">11</span>
             </a>
         </li>
         
@@ -1278,9 +1280,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Segmentfault -->
     
+    
 </div>
-
-
 
         
         <!--Copyright-->
@@ -1309,9 +1310,6 @@ It will not impact the appearance and can give developers a lot of support :)
             }
             setInterval("createtime()",250);</script>
             
-        <!-- 图片放大器Fancybox的js代码    
-       <script src="/js/warp.js"></script> -->
-
     </div>
         <!-- Paradox Footer Right Section -->
 
@@ -1499,15 +1497,22 @@ console.log('\n %c © Material Theme | Version: 1.5.5 | https://github.com/viose
 
  <!-- 使用medium-zoom放大图片-->
 <script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"> </script>
-
-
 <script>
 mediumZoom(document.querySelectorAll('#post-content img'), {
     margin: 16,
-    scrollOffset: 10,
+    scrollOffset: 500,
     background: 'rgba(0, 0, 0, .85)',
 });
 </script>   
+
+<!-- hexo-tag-fancybox_img 在Hexo博客文章或者单页面中加入fancybox（简易相册）--> 
+<!-- 用法：在Hexo博客的文章或者单页面中使用以下标签语法插入图片以及描述 {% fb_img src [caption] %} -->
+<!-- 例子: {% fb_img https://ws3.sinaimg.cn/large/006bYVyvly1fxxewq3plij30yn0jjkjl.jpg sakura %} -->
+<!-- 注意:激活后可能会和APlayer冲突 -->
+<!-- 在主题文件中引入需要的css和js。一般在主题的head中引入css，footer中引入js--开发者建议的引入方式 -->
+<!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script> -->
 
 
     <!-- 引入图片放大器Fancybox库 
@@ -1519,7 +1524,8 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
        <script src="/js/warp.js"></script> -->
 
 
-    
+
+  
    
     
 
@@ -1528,9 +1534,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
             </div>
         </body>
     
-            
 </html>
-
 
 
 <!--浏览器动态标题-->
@@ -1551,6 +1555,16 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     WIDGET = {FID: 'nYrdlNWPvE'}
     </script>
     <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+
+
+<!-- 使用Aplayer播放音乐 -->
+    <!-- <link rel="stylesheet" href="/dist/APlayer.min.css">
+    <div id="aplayer"></div>
+    <script type="text/javascript" src="/aplayer_dist/APlayer.min.js"></script>
+    <script type="text/javascript" src="/aplayer_dist/music.js"></script> -->
+
+
+    
     
 <!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script> -->
 
@@ -1567,6 +1581,5 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
 
 <!-- 左边出现2333娘 -->
 <!-- <script src="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources@master/live2d/autoload.js"></script> -->
-
 
 

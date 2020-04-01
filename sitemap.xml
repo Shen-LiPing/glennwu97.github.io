@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.glennwu.info/2020/03/16/1P3A-Daily-Problem/</loc>
+    
+    <lastmod>2020-04-01T16:59:42.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.glennwu.info/about/index.html</loc>
+    
+    <lastmod>2020-04-01T16:41:46.564Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/</loc>
     
     <lastmod>2020-04-01T04:06:21.449Z</lastmod>
@@ -40,13 +54,6 @@
     <loc>https://blog.glennwu.info/comment/index.html</loc>
     
     <lastmod>2020-03-15T15:45:45.639Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.glennwu.info/about/index.html</loc>
-    
-    <lastmod>2020-03-15T15:45:08.700Z</lastmod>
     
   </url>
   
