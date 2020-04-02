@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.glennwu.info/2020/03/16/1P3A-Daily-Problem/</loc>
+    <loc>https://blog.glennwu.info/game-list/index.html</loc>
     
-    <lastmod>2020-04-01T16:59:42.704Z</lastmod>
+    <lastmod>2020-04-02T15:47:48.866Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.glennwu.info/about/index.html</loc>
     
-    <lastmod>2020-04-01T16:41:46.564Z</lastmod>
+    <lastmod>2020-04-02T14:41:15.297Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.glennwu.info/2020/03/16/1P3A-Daily-Problem/</loc>
+    
+    <lastmod>2020-04-01T16:59:42.704Z</lastmod>
     
   </url>
   
@@ -68,13 +75,6 @@
     <loc>https://blog.glennwu.info/movie-list/index.html</loc>
     
     <lastmod>2020-03-14T05:14:37.510Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.glennwu.info/game-list/index.html</loc>
-    
-    <lastmod>2020-03-14T05:13:14.627Z</lastmod>
     
   </url>
   
