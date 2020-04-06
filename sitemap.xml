@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/</loc>
+    
+    <lastmod>2020-04-06T15:33:34.470Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.glennwu.info/game-list/index.html</loc>
     
-    <lastmod>2020-04-06T05:24:17.516Z</lastmod>
+    <lastmod>2020-04-06T15:31:10.462Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.glennwu.info/about/index.html</loc>
     
-    <lastmod>2020-04-02T14:41:15.297Z</lastmod>
+    <lastmod>2020-04-06T14:58:53.786Z</lastmod>
     
   </url>
   

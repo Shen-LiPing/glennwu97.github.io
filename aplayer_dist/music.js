@@ -29,8 +29,8 @@ const ap = new APlayer({
       {
           name: 'Shelter (Piano version)',
           artist: 'Porter Robinson / Madeon',
-          url: 'http://music.163.com/song/media/outer/url?id=461347460.mp3',
-          cover: 'http://p2.music.126.net/nEaSbkg_Cn8gN9vLoSz0gQ==/18494885092595843.jpg',
+          url: 'https://music.163.com/song/media/outer/url?id=461347460.mp3',
+          cover: 'https://p2.music.126.net/nEaSbkg_Cn8gN9vLoSz0gQ==/18494885092595843.jpg',
           lrc: ""
       } 
   ]
