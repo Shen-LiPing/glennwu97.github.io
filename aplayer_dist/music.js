@@ -18,20 +18,19 @@
 const ap = new APlayer({
   container: document.getElementById('aplayer'),
   autoplay: false,
- // narrow: true, 
+ narrow: true, 
   //mini: true,
   fixed: true,
   width: '',
   loop: 'all',
   preload: 'auto', 
-  lrcType: 1,
   theme: '#e9e9e9',
   audio: [
       {
-          name: 'Born to Die',
-          artist: 'Lana Del Rey',
-          url: 'http://music.163.com/song/media/outer/url?id=34690707.mp3',
-          cover: 'https://p1.music.126.net/OtQ5_iqEASnwrBooprUSpQ==/109951163520346143.jpg?param=130y130',
+          name: 'Shelter (Piano version)',
+          artist: 'Porter Robinson / Madeon',
+          url: 'http://music.163.com/song/media/outer/url?id=461347460.mp3',
+          cover: 'http://p2.music.126.net/nEaSbkg_Cn8gN9vLoSz0gQ==/18494885092595843.jpg',
           lrc: ""
       } 
   ]
