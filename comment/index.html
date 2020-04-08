@@ -483,7 +483,7 @@ code.plain, code.text {
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
             <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 83 + 1);
+    var randomNum = Math.floor(Math.random() * 85 + 1);
 
     $('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + ').jpg');
     $('.post_thumbnail-random').addClass('lazy');
@@ -615,6 +615,24 @@ code.plain, code.text {
 
                 
 
+                <!-- <html><h5>分享到:</h5></html> -->
+                    <!-- 引入分享按钮--share.js -->
+                  <div class="social-share"></div>
+               
+                <script>
+                    socialShare('#share',{ site:['qzone','qq','weibo','wechat','douban']})
+                </script>
+
+                  <!--  css & js -->
+                  <link rel="stylesheet" href="/share.js_dist/css/share.min.css">
+                  <!-- <script src="/dist/js/social-share.min.js"></script> -->
+
+                  <!-- 分享接口 -->
+                  <script src="/share.js_dist/src/js/social-share.js"></script>
+                  <!-- <script src="/dist/src/js/qrcode.js"></script> -->
+                  <!-- 指定移动设备上显示的图标 -->
+                  <!-- <div class="share-component" data-mobile-sites="weibo,qq,qzone,tencent"></div> -->
+
                 <!-- Post Comments -->
                 
                     
@@ -644,6 +662,7 @@ code.plain, code.text {
 
 
                 
+                 
             </div>
 
             <!-- Post Prev & Next Nav -->
@@ -660,6 +679,11 @@ code.plain, code.text {
 
 
 
+            
+            <!-- Share.js -->
+            
+         
+      
         </div>
     </div>
 
@@ -673,7 +697,7 @@ code.plain, code.text {
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
     <div id="sidebar-main">
         <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/1.gif);">
+        <div class="sidebar-header header-cover" style="background-image: url(/img/material%20(52).jpg);">
     <!-- Top bar -->
     <div class="top-bar"></div>
 
@@ -1216,6 +1240,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     background: 'rgba(0, 0, 0, .85)',
 });
 </script>   
+
 
 <!-- hexo-tag-fancybox_img 在Hexo博客文章或者单页面中加入fancybox（简易相册）--> 
 <!-- 用法：在Hexo博客的文章或者单页面中使用以下标签语法插入图片以及描述 {% fb_img src [caption] %} -->

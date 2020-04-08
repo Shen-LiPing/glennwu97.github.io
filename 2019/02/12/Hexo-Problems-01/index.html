@@ -763,6 +763,24 @@ INFO  Hexo is running at https://localhost:4000/. Press Ctrl+C to stop.</code></
 
                 
 
+                <!-- <html><h5>分享到:</h5></html> -->
+                    <!-- 引入分享按钮--share.js -->
+                  <div class="social-share"></div>
+               
+                <script>
+                    socialShare('#share',{ site:['qzone','qq','weibo','wechat','douban']})
+                </script>
+
+                  <!--  css & js -->
+                  <link rel="stylesheet" href="/share.js_dist/css/share.min.css">
+                  <!-- <script src="/dist/js/social-share.min.js"></script> -->
+
+                  <!-- 分享接口 -->
+                  <script src="/share.js_dist/src/js/social-share.js"></script>
+                  <!-- <script src="/dist/src/js/qrcode.js"></script> -->
+                  <!-- 指定移动设备上显示的图标 -->
+                  <!-- <div class="share-component" data-mobile-sites="weibo,qq,qzone,tencent"></div> -->
+
                 <!-- Post Comments -->
                 
                     
@@ -792,6 +810,7 @@ INFO  Hexo is running at https://localhost:4000/. Press Ctrl+C to stop.</code></
 
 
                 
+                 
             </div>
 
             <!-- Post Prev & Next Nav -->
@@ -826,6 +845,11 @@ INFO  Hexo is running at https://localhost:4000/. Press Ctrl+C to stop.</code></
 
 
 
+            
+            <!-- Share.js -->
+            
+         
+      
         </div>
     </div>
 
@@ -839,7 +863,7 @@ INFO  Hexo is running at https://localhost:4000/. Press Ctrl+C to stop.</code></
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
     <div id="sidebar-main">
         <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/1.gif);">
+        <div class="sidebar-header header-cover" style="background-image: url(/img/material%20(52).jpg);">
     <!-- Top bar -->
     <div class="top-bar"></div>
 
@@ -1390,6 +1414,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     background: 'rgba(0, 0, 0, .85)',
 });
 </script>   
+
 
 <!-- hexo-tag-fancybox_img 在Hexo博客文章或者单页面中加入fancybox（简易相册）--> 
 <!-- 用法：在Hexo博客的文章或者单页面中使用以下标签语法插入图片以及描述 {% fb_img src [caption] %} -->

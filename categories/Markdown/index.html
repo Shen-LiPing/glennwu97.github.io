@@ -546,8 +546,8 @@ code.plain, code.text {
     var randomNum;
 
     var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 8; i++) {
-        randomNum = Math.floor(Math.random() * 83 + 1);
+    for(var i = 0; i < 6; i++) {
+        randomNum = Math.floor(Math.random() * 85 + 1);
 
         locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
         locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material%20(' + randomNum + ').jpg');
@@ -577,7 +577,7 @@ code.plain, code.text {
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
     <div id="sidebar-main">
         <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/1.gif);">
+        <div class="sidebar-header header-cover" style="background-image: url(/img/material%20(52).jpg);">
     <!-- Top bar -->
     <div class="top-bar"></div>
 
@@ -1128,6 +1128,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     background: 'rgba(0, 0, 0, .85)',
 });
 </script>   
+
 
 <!-- hexo-tag-fancybox_img 在Hexo博客文章或者单页面中加入fancybox（简易相册）--> 
 <!-- 用法：在Hexo博客的文章或者单页面中使用以下标签语法插入图片以及描述 {% fb_img src [caption] %} -->
