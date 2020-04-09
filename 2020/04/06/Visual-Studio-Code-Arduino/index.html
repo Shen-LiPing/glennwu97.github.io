@@ -55,7 +55,7 @@
     
     <title>
         
-            Visual-Studio-Code-Arduino | 
+            Visual Studio Code折腾记:Arduino开发环境搭建 | 
         
         Glenn&#39;s Blog
     </title>
@@ -66,7 +66,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="This is Glenn&#39;s Blog">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",<font size=4>Visual Studio Code</font> <font size=4>Arduino</font>">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -106,7 +106,7 @@
     margin: 0 auto;
     max-width: calc(100% - 16px) !important; /* 在左右两边各留下 8px 边距用于显示阴影 */
     max-height: 480px;
-    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .2), 3px 3px 4px 3px rgba(0, 0, 0, .14), 3px 1px 8px 0 rgba(0, 0, 0, .12);
     transition: box-shadow .25s cubic-bezier(.4, 0, .2, 1) !important;
 }
 #post-content img:hover {
@@ -114,16 +114,17 @@
 }
 </style>
 
+
 <!-- 本来为空  用于设置kbd键盘按键显示效果 -->
 <style>
 
 kbd {
     background-color: #fafbfc;
-    border: 1px solid #c6cbd1;
+    border: 2px solid #c6cbd1;
     border-bottom-color: #959da5;
     border-radius: 3px;
     box-shadow: inset 0 -1.5px 0 #959da5;
-    font-size: 75%;
+    font-size: 105%;
     color: #444d56;
     padding: 0 5px;
     padding-bottom: 3px;
@@ -379,14 +380,14 @@ code.plain, code.text {
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Visual-Studio-Code-Arduino | Glenn&#39;s Blog">
+    <meta property="og:title" content="Visual Studio Code折腾记:Arduino开发环境搭建 | Glenn&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="This is Glenn&#39;s Blog">
-    
+    <meta property="og:article:tag" content="&lt;font size=4&gt;Visual Studio Code&lt;/font&gt; &lt;font size=4&gt;Arduino&lt;/font&gt;"> 
 
     
         <meta property="article:published_time" content="Mon Apr 06 2020 23:33:34 GMT+0800">
-        <meta property="article:modified_time" content="Mon Apr 06 2020 23:33:34 GMT+0800">
+        <meta property="article:modified_time" content="Thu Apr 09 2020 16:56:12 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -407,9 +408,9 @@ code.plain, code.text {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "mainEntityOfPage": "https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/index.html",
-    "headline": "Visual-Studio-Code-Arduino",
+    "headline": "Visual Studio Code折腾记:Arduino开发环境搭建",
     "datePublished": "Mon Apr 06 2020 23:33:34 GMT+0800",
-    "dateModified": "Mon Apr 06 2020 23:33:34 GMT+0800",
+    "dateModified": "Thu Apr 09 2020 16:56:12 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Glenn",
@@ -427,7 +428,7 @@ code.plain, code.text {
             "url": "/img/favicon.png"
         }
     },
-    "keywords": "",
+    "keywords": ",<font size=4>Visual Studio Code</font> <font size=4>Arduino</font>",
     "description": "This is Glenn&#39;s Blog",
 }
 </script>
@@ -475,6 +476,8 @@ code.plain, code.text {
                 s.parentNode.insertBefore(bp, s);
             })();
             </script> -->
+            
+            
             <!-- 谷歌验证网站所有权代码 -->
             <meta name="google-site-verification" content="THYxRW-f6RR608jtKsvQ5DhA1KlK5TAeu1bSY-HP-T4" />
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -520,6 +523,15 @@ code.plain, code.text {
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#配置步骤"><span class="post-toc-number">2.</span> <span class="post-toc-text">配置步骤</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#测试效果"><span class="post-toc-number">3.</span> <span class="post-toc-text">测试效果</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#演示动画如下"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">演示动画如下:</span></a></li></ol></li></ol>
+    </ul>
+    
 
 
 
@@ -549,7 +561,7 @@ code.plain, code.text {
         
     
             <p class="article-headline-p">
-                Visual-Studio-Code-Arduino
+                Visual Studio Code折腾记:Arduino开发环境搭建
             </p>
         </div>
 
@@ -586,6 +598,15 @@ code.plain, code.text {
 
     <!-- Tags (bookmark) -->
     
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/font-size-4-Visual-Studio-Code-font-font-size-4-Arduino-font/" rel="tag"><font size=4>Visual Studio Code</font> <font size=4>Arduino</font></a>
+    </ul>
+    
 
     <!-- Share -->
     
@@ -602,7 +623,7 @@ code.plain, code.text {
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Visual-Studio-Code-Arduino&url=https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Visual Studio Code折腾记:Arduino开发环境搭建&url=https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/index.html&pic=https://blog.glennwu.info/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -629,7 +650,7 @@ code.plain, code.text {
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=Visual-Studio-Code-Arduino&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Glenn&#39;s Blog&title=Visual Studio Code折腾记:Arduino开发环境搭建&summary=This is Glenn&#39;s Blog&pics=https://blog.glennwu.info/img/favicon.png&url=https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -651,7 +672,36 @@ code.plain, code.text {
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
     
-        
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Arduino的官方IDE较为简陋，没有语法高亮，没有代码补全，不能快速查找跳转函数及变量，在开发稍微复杂一点的项目时很是痛苦。有时候需要查看库文件代码，也只能在电脑中搜索文件名去打开。而VSCode作为当下流行的编辑器，有轻量化、跨平台、大量插件支持等特点，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义快捷键、括号匹配和颜色区分等。VSCode上也有Arduino的插件，集成了Arduino上全部的功能，不管是编码烧录还是导入库之类的都可以在上面完成。</p>
+<h1 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h1><ol>
+<li><p>下载安装过VSCode(已安装请忽略)，官方地址(<a href="https://code.visualstudio.com/)。" target="_blank" rel="noopener">https://code.visualstudio.com/)。</a></p>
+</li>
+<li><p>下载官方Arduino IDE，VSCode只是编辑器，需要去调用Arduino IDE完成程序编译等。官方网址(<a href="https://www.arduino.cc/en/Main/Software)。" target="_blank" rel="noopener">https://www.arduino.cc/en/Main/Software)。</a></p>
+</li>
+<li><p>在VSCode中搜索并安装Arduino插件。</p>
+</li>
+</ol>
+<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409160851.jpg" alt=""></p>
+<ol start="4">
+<li>进入VSCode的设置界面，可以使用快捷键 <kbd> Ctrl </kbd>+ <kbd>,</kbd>进入，搜索Arduino相关设置，在Path中添加Arduino IDE的安装路径。</li>
+</ol>
+<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409160943.jpg" alt=""><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409161356.jpg" alt=""></p>
+<h1 id="测试效果"><a href="#测试效果" class="headerlink" title="测试效果"></a>测试效果</h1><ol>
+<li>打开例程所在的文件夹，选择其中的一个例程进行测试。也可以新建一个文件夹，然后创建Arduino的测试程序(注意:命名后缀为.ino)。</li>
+</ol>
+<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409160948.jpg" alt=""></p>
+<ol start="2">
+<li><p>在窗口下方状态条处点击设置开发板型号、COM口等。点击插头标志则可设置串口监视器状态。</p>
+</li>
+<li><p>点击窗口右上方图标或使用快捷键进行编译和上传操作：</p>
+</li>
+</ol>
+<ul>
+<li><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> 编译并上传</li>
+<li><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd> 进行编译验证</li>
+</ul>
+<h2 id="演示动画如下"><a href="#演示动画如下" class="headerlink" title="演示动画如下:"></a>演示动画如下:</h2><p><img src="https://i.loli.net/2020/04/09/L92SCebpzJjMo7A.gif" alt=""></p>
+
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong>
@@ -671,23 +721,18 @@ code.plain, code.text {
 
                 
 
+
+                
                 <!-- <html><h5>分享到:</h5></html> -->
                     <!-- 引入分享按钮--share.js -->
                   <div class="social-share"></div>
-               
-                <script>
-                    socialShare('#share',{ site:['qzone','qq','weibo','wechat','douban']})
-                </script>
 
                   <!--  css & js -->
                   <link rel="stylesheet" href="/share.js_dist/css/share.min.css">
-                  <!-- <script src="/dist/js/social-share.min.js"></script> -->
-
-                  <!-- 分享接口 -->
                   <script src="/share.js_dist/js/social-share.min.js"></script>
-                  <!-- <script src="/dist/src/js/qrcode.js"></script> -->
-                  <!-- 指定移动设备上显示的图标 -->
-                  <!-- <div class="share-component" data-mobile-sites="weibo,qq,qzone,tencent"></div> -->
+                  <br />
+                  <br />
+
 
                 <!-- Post Comments -->
                 
@@ -853,7 +898,7 @@ code.plain, code.text {
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/1P3A/">1P3A<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hello-World/">Hello-World<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Visual-Studio-Code/">Visual Studio Code<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%89%A7%E8%AF%84/">剧评<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%9B%BE%E5%BA%8A/">图床<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%91%84%E5%BD%B1/">摄影<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A0%E4%BA%BA%E6%9C%BA/">无人机<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/1P3A/">1P3A<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hello-World/">Hello-World<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Visual-Studio-Code/">Visual Studio Code<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%89%A7%E8%AF%84/">剧评<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%9B%BE%E5%BA%8A/">图床<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%91%84%E5%BD%B1/">摄影<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%97%A0%E4%BA%BA%E6%9C%BA/">无人机<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -1352,8 +1397,6 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
 <!--禁用鼠标右键与F12-->
 <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
-<!--预加载--地址有问题-->
-<!-- <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script> -->
 
 
 <!-- 点击鼠标出现彩色颜料的爆炸效果 -->
@@ -1372,16 +1415,6 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     <script type="text/javascript" src="/aplayer_dist/APlayer.min.js"></script>
     <script type="text/javascript" src="/aplayer_dist/music.js"></script>
 
-
-    
-    
-<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script> -->
-
-<!-- 背景出现樱花雨 -->
-<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script> -->
-
-<!-- 背景出现雪花 -->
-<!-- <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js"></script> -->
 
 
 <!-- 背景出现代码雨 -->
