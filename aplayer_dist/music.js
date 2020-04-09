@@ -8,7 +8,7 @@
 // 	  {
 //         name: 'Shelter',//'Shelter'
 //         artist: 'Shelter' ,//'Shelter'
-//         url: 'http://music.163.com/song/media/outer/url?id=461347460.mp3',
+//         url: 'https://music.163.com/song/media/outer/url?id=461347460.mp3',
 //         cover: '', //'/img/favicon.png',
 //       },
      
@@ -34,19 +34,6 @@ const ap = new APlayer({
           lrc: ""
       } 
   ]
-});
-
-const colorThief = new ColorThief();
-const setTheme = (index) => {
-  if (!ap.list.audios[index].theme) {
-      colorThief.getColorAsync(ap.list.audios[index].cover, function (color) {
-          ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
-      });
-  }
-};
-setTheme(ap.list.index);
-ap.on('listswitch', (index) => {
-  setTheme(index.index);
 });
 
 

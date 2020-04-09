@@ -28,9 +28,9 @@ $(document).ready(function() {
         });
     });
 
-    // Auto fill visitor-url "http://"
+    // Auto fill visitor-url "https://"
     $("#visitor-url").focus(function() {
-        this.placeholder = "http://";
+        this.placeholder = "https://";
     });
     $("#visitor-url").blur(function() {
         this.placeholder = "";
