@@ -90,7 +90,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?HvoWLea0PFo6GJ98WWzUSA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?lKUlT88j+FYdoSEivsivNw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -387,7 +387,7 @@ code.plain, code.text {
 
     
         <meta property="article:published_time" content="Tue Mar 05 2019 00:54:59 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 31 2020 00:12:49 GMT+0800">
+        <meta property="article:modified_time" content="Thu Apr 09 2020 22:52:56 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -410,7 +410,7 @@ code.plain, code.text {
     "mainEntityOfPage": "https://blog.glennwu.info/2019/03/05/Visual-Studio-Cod-JavaSE/index.html",
     "headline": "Visual Studio Code折腾记:JavaSE开发环境搭建",
     "datePublished": "Tue Mar 05 2019 00:54:59 GMT+0800",
-    "dateModified": "Tue Mar 31 2020 00:12:49 GMT+0800",
+    "dateModified": "Thu Apr 09 2020 22:52:56 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Glenn",
@@ -668,50 +668,22 @@ code.plain, code.text {
 
 <h1 id="效果"><a href="#效果" class="headerlink" title="效果:"></a>效果:</h1><p>在工作区新建一个.java文件在直接在Vscode编辑器内运行测试代码。<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175954.jpg" alt=""></p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309194645.jpg" alt=""></p>
-<h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料:"></a>准备材料:</h1><ol>
-<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>  </li>
-<li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">jdk-8u201-windows-x64.exe</a></li>
-<li>拓展-Code Runner</li>
-</ol>
-<h1 id="系统-Windows-10-x64"><a href="#系统-Windows-10-x64" class="headerlink" title="系统: Windows-10-x64"></a>系统: Windows-10-x64</h1><h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识:"></a>背景知识:</h1><ol>
-<li><p>首先要清楚<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a> 本身只是一个文本文本编辑器只是用来编辑代码的,若想用它来编译,调试和运行代码则需要在它提供的拓展库中装相应的拓展插件并在外部配置好执行代码所需要编译器,解释器的路径(环境变量)。 </p>
-</li>
-<li><p>Java是编译与解释两者之间的混合式语言。Java源程序必须经过编译才能运行。编译器是一种将程序源代码转换成可执行格式(如字节码)的程序，Java的编译器是一个名为javac的程序。使用javac可将Java源代码编译成字节码,运行字节码则需要一个Java虚拟机(JVM)。此外,开发中常用到Java核心类库中的类,因此还需要下载这些类库。JVM和Java类库一起构成了Java运行时环境(Java runtime enviroment,JRE)。 PS：不同操作系统的JRE并不相同。</p>
-</li>
-<li><p>JDK(Java Development Toolkit): 称为Java开发工具包。包括JRE，外加一个编译器和其他工具，是编译和运行Java环境必备的软件。 简而言之,JVM是一种运行字节码的应用程序。JRE则是一种包含了JVM和Java类库的环境。JDK则包含JRE及一个Java编译器和其他程序的工具集。</p>
-</li>
-</ol>
+<h1 id="准备材料"><a href="#准备材料" class="headerlink" title="准备材料:"></a>准备材料:</h1><p>1.<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a><br>2.<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">jdk-8u201-windows-x64.exe</a><br>3.拓展-Code Runner</p>
+<h1 id="系统-Windows-10-x64"><a href="#系统-Windows-10-x64" class="headerlink" title="系统: Windows-10-x64"></a>系统: Windows-10-x64</h1><h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识:"></a>背景知识:</h1><p>1.首先要清楚<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a> 本身只是一个文本文本编辑器只是用来编辑代码的,若想用它来编译,调试和运行代码则需要在它提供的拓展库中装相应的拓展插件并在外部配置好执行代码所需要编译器,解释器的路径(环境变量)。 </p>
+<p>2.Java是编译与解释两者之间的混合式语言。Java源程序必须经过编译才能运行。编译器是一种将程序源代码转换成可执行格式(如字节码)的程序，Java的编译器是一个名为javac的程序。使用javac可将Java源代码编译成字节码,运行字节码则需要一个Java虚拟机(JVM)。此外,开发中常用到Java核心类库中的类,因此还需要下载这些类库。JVM和Java类库一起构成了Java运行时环境(Java runtime enviroment,JRE)。 PS：不同操作系统的JRE并不相同。</p>
+<p>3.JDK(Java Development Toolkit): 称为Java开发工具包。包括JRE，外加一个编译器和其他工具，是编译和运行Java环境必备的软件。 简而言之,JVM是一种运行字节码的应用程序。JRE则是一种包含了JVM和Java类库的环境。JDK则包含JRE及一个Java编译器和其他程序的工具集。</p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309180001.jpg" alt=""></p>
-<h1 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤:"></a>配置步骤:</h1><ol>
-<li><p>下载jdk<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175958.jpg" alt=""><br>jdk下载完成后打开后一路选择(下一步)next即可,如果不想装在C盘就设置下安装路径选择自己要安装的路径。PS:记住自己安装的路径，配置环境的时候会用到</p>
-</li>
-<li><p>配置环境变量<br>安装好了之后,打开此电脑-&gt;系统属性-&gt;查找编辑系统环境变量-&gt;环境变量-&gt;系统变量栏下的新建-&gt;需要配置三个环境</p>
-</li>
-</ol>
-<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309180002.jpg" alt=""></p>
-<ul>
-<li>变量名：<code>JAVA_HOME</code></li>
-<li>变量值：<code>C:\Program Files\Java\jdk1.8.0_201</code> （即你JDK的安装路径）<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175955.jpg" alt=""></li>
-<li>变量名：<code>CLASSPATH</code>  </li>
-<li>变量值：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code> （留意前面有个小点 “.”）</li>
-</ul>
-<ul>
-<li>变量名：<code>PATH</code></li>
-<li>变量值：<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</code>（在变量值最后输入注意原来Path的变量值末尾有没有;号，如果没有，先输入；号再输入上面的代码）<br>最后点击确定确定，环境就配置完成了。</li>
-</ul>
-<ol>
-<li>下载Visual studio code扩展库中的 Code Runner</li>
-</ol>
+<h1 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤:"></a>配置步骤:</h1><p>1.下载jdk<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175958.jpg" alt=""><br>jdk下载完成后打开后一路选择(下一步)next即可,如果不想装在C盘就设置下安装路径选择自己要安装的路径。PS:记住自己安装的路径，配置环境的时候会用到</p>
+<p>2.配置环境变量<br>安装好了之后,打开此电脑-&gt;系统属性-&gt;查找编辑系统环境变量-&gt;环境变量-&gt;系统变量栏下的新建-&gt;需要配置三个环境</p>
+<p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309180002.jpg" alt=""><br>-变量名：<code>JAVA_HOME</code><br>-变量值：<code>C:\Program Files\Java\jdk1.8.0_201</code> （即你JDK的安装路径）<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175955.jpg" alt=""><br>-变量名：<code>CLASSPATH</code><br>-变量值：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar</code> （留意前面有个小点 “.”）</p>
+<p>-变量名：<code>PATH</code><br>-变量值：<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</code>（在变量值最后输入注意原来Path的变量值末尾有没有;号，如果没有，先输入；号再输入上面的代码）<br>最后点击确定确定，环境就配置完成了。</p>
+<p>1.下载Visual studio code扩展库中的 Code Runner</p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309180003.png" alt=""></p>
 <h1 id="使用cmd检查配置是否安装成功"><a href="#使用cmd检查配置是否安装成功" class="headerlink" title="使用cmd检查配置是否安装成功:"></a>使用cmd检查配置是否安装成功:</h1><p>打开cmd回车-&gt;输入java-&gt; 输入javac -&gt; 输入java -version -&gt;若均能显示相关信息则代表安装完成。<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175952.jpg" alt=""><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175959.jpg" alt=""><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175956.jpg" alt=""></p>
 <h1 id="使用Visual-Studio-Code运行测试代码"><a href="#使用Visual-Studio-Code运行测试代码" class="headerlink" title="使用Visual Studio Code运行测试代码:"></a>使用Visual Studio Code运行测试代码:</h1><p>点击了右上角的右向三角按钮就可以在自带的终端下运行代码。然后下方的终端里就会出现一个炫酷无敌diao炸天的Hello World,也就代表一个基于CodeRunner的Java学习开发环境已经搭建完成啦!<br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175953.jpg" alt=""></p>
-<h1 id="常见的坑"><a href="#常见的坑" class="headerlink" title="常见的坑:"></a>常见的坑:</h1><ol>
-<li>编辑系统环境变量的时候注意系统变量CLASSPATH路径配置的时候要在首位加上<code>,;</code>否则就会出现在cmd中用<code>javac</code>编译可以通过但用<code>java</code>命令后却出现无法发现类这一情况。</li>
-</ol>
+<h1 id="常见的坑"><a href="#常见的坑" class="headerlink" title="常见的坑:"></a>常见的坑:</h1><p>1.编辑系统环境变量的时候注意系统变量CLASSPATH路径配置的时候要在首位加上<code>,;</code>否则就会出现在cmd中用<code>javac</code>编译可以通过但用<code>java</code>命令后却出现无法发现类这一情况。</p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175950.jpg" alt=""></p>
-<ol start="2">
-<li>在java源文件的开头不要加上<code>package xx</code>, java源文件开头的package xx是Eclipse等开发Java大型项目的IDE所特有的格式,javac编译器可以通过编译但是java解释器是无法识别该格式的。所以在用不使用IDE开发的情况下源文件开头就不要加上这句话了。</li>
-</ol>
+<p>2.在java源文件的开头不要加上<code>package xx</code>, java源文件开头的package xx是Eclipse等开发Java大型项目的IDE所特有的格式,javac编译器可以通过编译但是java解释器是无法识别该格式的。所以在用不使用IDE开发的情况下源文件开头就不要加上这句话了。</p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200309175957.jpg" alt=""></p>
 <h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接:"></a>参考链接:</h1><p><a href="https://code.visualstudio.com/docs/languages/java" target="_blank" rel="noopener">Visual Studio Code官网上的Java开发环境配置教程</a><br><a href="https://blog.csdn.net/luoaki/article/details/79138028" target="_blank" rel="noopener">Visual Studio Code基于maven的Java开发环境配置教程</a><br><a href="https://www.mamicode.com/info-detail-2423185.html" target="_blank" rel="noopener">Visual Studio Code基于Language Support for Java(TM)by Red Hat的Java和Debugger for Java开发环境配置教程</a><br><a href="https://blog.csdn.net/bat67/article/details/78289602/" target="_blank" rel="noopener">Visual Studio Code基于Java Extension Pack的Java开发环境配置教程</a></p>
 
