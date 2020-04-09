@@ -66,7 +66,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="This is Glenn&#39;s Blog">
-    <meta name="keywords" content=",<font size=4>Visual Studio Code</font> <font size=4>Arduino</font>">
+    <meta name="keywords" content=",<font size=4>Visual Studio Code</font>,Arduino">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -90,7 +90,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?4OW613pQL8xMwuZhk5dC3Q==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?HvoWLea0PFo6GJ98WWzUSA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -383,11 +383,11 @@ code.plain, code.text {
     <meta property="og:title" content="Visual Studio Code折腾记:Arduino开发环境搭建 | Glenn&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="This is Glenn&#39;s Blog">
-    <meta property="og:article:tag" content="&lt;font size=4&gt;Visual Studio Code&lt;/font&gt; &lt;font size=4&gt;Arduino&lt;/font&gt;"> 
+    <meta property="og:article:tag" content="&lt;font size=4&gt;Visual Studio Code&lt;/font&gt;"> <meta property="og:article:tag" content="Arduino"> 
 
     
         <meta property="article:published_time" content="Mon Apr 06 2020 23:33:34 GMT+0800">
-        <meta property="article:modified_time" content="Thu Apr 09 2020 16:56:12 GMT+0800">
+        <meta property="article:modified_time" content="Thu Apr 09 2020 22:40:32 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -410,7 +410,7 @@ code.plain, code.text {
     "mainEntityOfPage": "https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/index.html",
     "headline": "Visual Studio Code折腾记:Arduino开发环境搭建",
     "datePublished": "Mon Apr 06 2020 23:33:34 GMT+0800",
-    "dateModified": "Thu Apr 09 2020 16:56:12 GMT+0800",
+    "dateModified": "Thu Apr 09 2020 22:40:32 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Glenn",
@@ -428,7 +428,7 @@ code.plain, code.text {
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",<font size=4>Visual Studio Code</font> <font size=4>Arduino</font>",
+    "keywords": ",<font size=4>Visual Studio Code</font>,Arduino",
     "description": "This is Glenn&#39;s Blog",
 }
 </script>
@@ -604,7 +604,7 @@ code.plain, code.text {
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/font-size-4-Visual-Studio-Code-font-font-size-4-Arduino-font/" rel="tag"><font size=4>Visual Studio Code</font> <font size=4>Arduino</font></a>
+        <a class="post_tag-link" href="/tags/font-size-4-Visual-Studio-Code-font/" rel="tag"><font size=4>Visual Studio Code</font></a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Arduino/" rel="tag">Arduino</a>
     </ul>
     
 
@@ -673,29 +673,16 @@ code.plain, code.text {
     
     
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Arduino的官方IDE较为简陋，没有语法高亮，没有代码补全，不能快速查找跳转函数及变量，在开发稍微复杂一点的项目时很是痛苦。有时候需要查看库文件代码，也只能在电脑中搜索文件名去打开。而VSCode作为当下流行的编辑器，有轻量化、跨平台、大量插件支持等特点，支持几乎所有主流的开发语言的语法高亮、智能代码补全、自定义快捷键、括号匹配和颜色区分等。VSCode上也有Arduino的插件，集成了Arduino上全部的功能，不管是编码烧录还是导入库之类的都可以在上面完成。</p>
-<h1 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h1><ol>
-<li><p>下载安装过VSCode(已安装请忽略)，官方地址(<a href="https://code.visualstudio.com/)。" target="_blank" rel="noopener">https://code.visualstudio.com/)。</a></p>
-</li>
-<li><p>下载官方Arduino IDE，VSCode只是编辑器，需要去调用Arduino IDE完成程序编译等。官方网址(<a href="https://www.arduino.cc/en/Main/Software)。" target="_blank" rel="noopener">https://www.arduino.cc/en/Main/Software)。</a></p>
-</li>
-<li><p>在VSCode中搜索并安装Arduino插件。</p>
-</li>
-</ol>
+<h1 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h1><p>1.下载安装过VSCode(已安装请忽略)，官方地址(<a href="https://code.visualstudio.com/)。" target="_blank" rel="noopener">https://code.visualstudio.com/)。</a></p>
+<p>2.下载官方Arduino IDE，VSCode只是编辑器，需要去调用Arduino IDE完成程序编译等。官方网址(<a href="https://www.arduino.cc/en/Main/Software)。" target="_blank" rel="noopener">https://www.arduino.cc/en/Main/Software)。</a></p>
+<p>3.在VSCode中搜索并安装Arduino插件。</p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409160851.jpg" alt=""></p>
-<ol start="4">
-<li>进入VSCode的设置界面，可以使用快捷键 <kbd> Ctrl </kbd>+ <kbd>,</kbd>进入，搜索Arduino相关设置，在Path中添加Arduino IDE的安装路径。</li>
-</ol>
+<p>4.进入VSCode的设置界面，可以使用快捷键 <kbd> Ctrl </kbd>+ <kbd>,</kbd>进入，搜索Arduino相关设置，在Path中添加Arduino IDE的安装路径。</p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409160943.jpg" alt=""><br><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409161356.jpg" alt=""></p>
-<h1 id="测试效果"><a href="#测试效果" class="headerlink" title="测试效果"></a>测试效果</h1><ol>
-<li>打开例程所在的文件夹，选择其中的一个例程进行测试。也可以新建一个文件夹，然后创建Arduino的测试程序(注意:命名后缀为.ino)。</li>
-</ol>
+<h1 id="测试效果"><a href="#测试效果" class="headerlink" title="测试效果"></a>测试效果</h1><p>1.打开例程所在的文件夹，选择其中的一个例程进行测试。也可以新建一个文件夹，然后创建Arduino的测试程序(注意:命名后缀为.ino)。</p>
 <p><img src="https://gitee.com//gleenwu/picbed01/raw/master/img/20200409160948.jpg" alt=""></p>
-<ol start="2">
-<li><p>在窗口下方状态条处点击设置开发板型号、COM口等。点击插头标志则可设置串口监视器状态。</p>
-</li>
-<li><p>点击窗口右上方图标或使用快捷键进行编译和上传操作：</p>
-</li>
-</ol>
+<p>2.在窗口下方状态条处点击设置开发板型号、COM口等。点击插头标志则可设置串口监视器状态。</p>
+<p>3.点击窗口右上方图标或使用快捷键进行编译和上传操作：</p>
 <ul>
 <li><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>U</kbd> 编译并上传</li>
 <li><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>R</kbd> 进行编译验证</li>
@@ -917,17 +904,7 @@ code.plain, code.text {
         
     
         <li>
-            <a href="/books" title="书架">
-                
-                    <i class="material-icons sidebar-material-icons">book</i>
-                
-                书架
-            </a>
-        </li>
-        
-    
-        <li>
-            <a href="/movies" title="影视">
+            <a href="/movie-list" title="影视">
                 
                     <i class="material-icons sidebar-material-icons">movie</i>
                 
@@ -1193,7 +1170,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+    <script>lsloader.load("js_js","/js/js.min.js?x1uB3XKBvDVAt1USvsGG8A==", true)</script>
 
 
 
