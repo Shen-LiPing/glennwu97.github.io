@@ -40,9 +40,40 @@ body {
 .material-icons {
     -moz-osx-font-smoothing: grayscale;
 }
-a {
+/* a {
     font-weight: 400;
+} */
+
+a {
+    color: #db4d6d;
+    position: relative;
+    text-decoration: none;
 }
+/* 添加有动画效果的下划线 */
+a:after{
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #db4d6d;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .2s;
+}
+
+/* 鼠标移动到连接上时显示下划线 */
+
+a:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+/* 某些元素的a标签并不需要下划线效果 */
+.xxx > a:after {
+    background: 0 0;
+}
+
+
 .mdl-button {
     font-family: Roboto, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
 }
@@ -542,7 +573,7 @@ a {
     padding: 24.72px;
     background-size: cover;
     cursor: pointer; 
-    /* cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/normal.cur),auto; 来源https://flymc.top/2020/03/28/Sakura/#%E4%BA%8C%E3%80%81Sakura%E4%B8%BB%E9%A2%98%E8%B0%83%E6%95%99 */
+    /* cursor:url(http://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/normal.cur),auto; 来源http://flymc.top/2020/03/28/Sakura/#%E4%BA%8C%E3%80%81Sakura%E4%B8%BB%E9%A2%98%E8%B0%83%E6%95%99 */
     flex-grow: 1;
     flex-direction: row;
     align-items: flex-end
@@ -2729,19 +2760,11 @@ a {
 
 
 
-/* 鼠标在代码块悬浮时行突出： */
-/* .hljs-ln-line:hover {
-    background-color: rgba(255, 255, 255, .1);
-}
-.hljs-ln-line.hljs-ln-n:hover{
-    background-color: rgba(0,0,0,0) !important;
-} */
-
 /* 鼠标样式： */
 
   /* * {
-      cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/normal.cur"),auto!important
+      cursor: url("http://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/normal.cur"),auto!important
   }
   :active {
-      cursor: url("https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/No_Disponible.cur"),auto!important
+      cursor: url("http://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cursor/No_Disponible.cur"),auto!important
   } */

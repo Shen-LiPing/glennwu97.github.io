@@ -90,7 +90,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?lKUlT88j+FYdoSEivsivNw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?WqIdFFpZ5Cu134me95+pCA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -587,6 +587,8 @@ code.plain, code.text {
 </ul>
 
     
+
+
 </div>
 
 
@@ -634,6 +636,9 @@ code.plain, code.text {
             scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>
         </div>
         
+
+       
+
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong>
@@ -656,7 +661,7 @@ code.plain, code.text {
 
                 
                 <!-- <html><h5>分享到:</h5></html> -->
-                    <!-- 引入分享按钮--share.js -->
+                    <!-- 引入页面底部社交分享按钮--share.js -->
                   <div class="social-share"></div>
 
                   <!--  css & js -->
@@ -665,6 +670,38 @@ code.plain, code.text {
                   <br />
                   <br />
 
+                    <!-- 超链接样式 -->
+    <style>
+      a {
+        font-weight: 400;
+        color: #37ad99;
+        position: relative;
+        text-decoration: #37ad99;
+         }
+      /* 添加有动画效果的下划线 */
+         a:after{
+        content: "";
+        width: 0;
+        height: 1px;
+        background: #37ad99;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transition: all .2s;
+         }
+    
+          /* 鼠标移动到连接上时显示下划线 */
+    
+          a:hover:after {
+            left: 0;
+             width: 100%;
+         }
+    
+         /* 某些元素的a标签并不需要下划线效果 */
+         .xxx>a:after {
+                 background: 0 0;
+             } 
+    </style>
 
                 <!-- Post Comments -->
                 
@@ -713,9 +750,7 @@ code.plain, code.text {
 
 
             
-            <!-- Share.js -->
-            
-         
+
       
         </div>
     </div>

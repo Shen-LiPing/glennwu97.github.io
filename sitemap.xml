@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.glennwu.info/movie-list/index.html</loc>
+    
+    <lastmod>2020-04-10T09:11:35.233Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.glennwu.info/2020/03/10/Pic-Beds-01/</loc>
     
     <lastmod>2020-04-09T15:07:14.070Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>https://blog.glennwu.info/game-list/index.html</loc>
     
     <lastmod>2020-04-09T12:51:12.239Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.glennwu.info/movie-list/index.html</loc>
-    
-    <lastmod>2020-04-09T12:50:52.751Z</lastmod>
     
   </url>
   
