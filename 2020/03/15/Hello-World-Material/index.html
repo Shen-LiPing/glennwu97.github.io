@@ -18,6 +18,9 @@
         ]
     </script>
 
+    <!-- 豆瓣书单手机端页面无法显示图片 -->
+    <meta name="referrer" content="no-referrer">
+
     <!-- dns prefetch -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
@@ -90,7 +93,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?WqIdFFpZ5Cu134me95+pCA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?BxxWn+ghHhckcjFByAh6BA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -679,7 +682,6 @@ code.plain, code.text {
 <h1 id="为啥要换这个主题"><a href="#为啥要换这个主题" class="headerlink" title="为啥要换这个主题"></a>为啥要换这个主题</h1><p>1.简约大气，干净清爽。<br>2.主题带有相册的接口。<br>3.页面渲染快即加载速度快。<br>4.朋友某大佬在用这个主题，向他看齐.😐<br>5.Hexo主流文档之一，开发文档多。</p>
 <h1 id="简单介绍一下新的特征"><a href="#简单介绍一下新的特征" class="headerlink" title="简单介绍一下新的特征"></a>简单介绍一下新的特征</h1><p>1.相册功能; 打开左上角的按钮即可看到<br>2.影视/游戏评论功能; 打开左上角的按钮即可看到<br>3.博客代码同时托管于Coding和Github仓库，实现双线部署。国内线路访问Coding, 国外线路访问Github仓库(目前还在配置中…)。总之国内访问速度快了不少。</p>
 
-
        
 
         
@@ -713,38 +715,6 @@ code.plain, code.text {
                   <br />
                   <br />
 
-                    <!-- 超链接样式 -->
-    <style>
-       #post-content a {
-        font-weight: 400;
-        color: #37ad99;
-        position: relative;
-        text-decoration: #37ad99;
-         }
-      /* 添加有动画效果的下划线 */
-      #post-content a:after{
-        content: "";
-        width: 0;
-        height: 1px;
-        background: #37ad99;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transition: all .2s;
-         }
-    
-          /* 鼠标移动到连接上时显示下划线 */
-    
-          #post-content a:hover:after {
-            left: 0;
-             width: 100%;
-         }
-    
-         /* 某些元素的a标签并不需要下划线效果 */
-         .xxx>a:after {
-                 background: 0 0;
-             } 
-    </style>
 
                 <!-- Post Comments -->
                 
@@ -1369,6 +1339,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
 </script>   
 
 
+
 <!-- hexo-tag-fancybox_img 在Hexo博客文章或者单页面中加入fancybox（简易相册）--> 
 <!-- 用法：在Hexo博客的文章或者单页面中使用以下标签语法插入图片以及描述 {% fb_img src [caption] %} -->
 <!-- 例子: {% fb_img https://ws3.sinaimg.cn/large/006bYVyvly1fxxewq3plij30yn0jjkjl.jpg sakura %} -->
@@ -1393,6 +1364,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
    
     
 
+
                     
                 </main>
             </div>
@@ -1400,17 +1372,40 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     
 </html>
 
+ <!-- 使用Meeting Js播放音乐 -->
+                <!-- require APlayer -->
+                <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+                <!-- require MetingJS -->
+                <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+                <meting-js
+	            server="netease"
+                type="song"
+                id="427606780"
+                fixed="true"
+                mini="true"
+                mutex="true"
+                volume="0.7"
+                lrc-type="1"
+	            >
+             </meting-js>
 
-<!--浏览器动态标题-->
-<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+            <!--浏览器动态标题-->
+            <script type="text/javascript" src="\js\FunnyTitle.js"></script>
 
-<!--禁用鼠标右键与F12-->
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
+            <!--禁用鼠标右键与F12-->
+            <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
 
 
-<!-- 点击鼠标出现彩色颜料的爆炸效果 -->
-<script src="\js\mouse-click.js"></script>
+            <!-- 点击鼠标出现彩色颜料的爆炸效果 -->
+            <script src="\js\mouse-click.js"></script>
+
+
+
+
+
+
 
 <!-- 天气插件 -->
 <!-- <script type="text/javascript">
@@ -1424,24 +1419,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     <!-- <div id="aplayer"></div> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/APlayer.min.js"></script> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/music.js"></script> -->
-  <!-- 使用Meeting Js播放音乐 -->
-    <!-- require APlayer -->
-    <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    <!-- require MetingJS -->
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-    <meting-js
-	server="netease"
-    type="song"
-    id="427606780"
-    fixed="true"
-    mini="true"
-    mutex="true"
-    volume="0.7"
-    lrc-type="1"
-	>
-    </meting-js>
-
+ 
 
  <!-- <script src="https://cdn.jsdelivr.net/npm/pjax@VERSION/pjax.js"></script> -->
 

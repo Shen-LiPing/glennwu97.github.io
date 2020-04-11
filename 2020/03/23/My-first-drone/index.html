@@ -18,6 +18,9 @@
         ]
     </script>
 
+    <!-- 豆瓣书单手机端页面无法显示图片 -->
+    <meta name="referrer" content="no-referrer">
+
     <!-- dns prefetch -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
@@ -90,7 +93,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?WqIdFFpZ5Cu134me95+pCA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?BxxWn+ghHhckcjFByAh6BA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -674,7 +677,6 @@ code.plain, code.text {
 <h1 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h1><p>在大疆论坛和数个淘宝店铺逛了一圈发现御Mini的平均使用寿命并不长，对于许多新手来说可能不会超过10小时(最后的我飞行总时长是7小时。。。)。 主要失事情景是撞树，撞鸟，突然失控和被风吹跑。 其中被风吹跑在所有失事案例中出现的频率最高，也最难找回机身。</p>
 <h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>在失去无人机的当晚，我心中满是钞票被大风刮走的画面和各种vlog计划破碎的声音。我想倘若我跟谨慎一些这一切都不会发生吧，但是没有发生这次意外我会谨慎吗？小心驶得万年船，这次无人机的失事又给我提了个醒，驾驶无人机不小心的后果可能只是一台无人机的丢失，日后要是驾车不小心那后果可就是不单是这么简单了。丢失了无人机后，尽管在开始的一两天我很难受，但是逐渐的我反而变得轻松了许多。不用再考虑每天该带着我的无人机去哪拍片或如何拍出更好的东西，又一次能静下心来做好当前最该做好的一些事情，比如认真看书，认真做毕设。正可谓是，塞翁失马焉知非福，一念放下，万般自在。</p>
 
-
        
 
         
@@ -708,38 +710,6 @@ code.plain, code.text {
                   <br />
                   <br />
 
-                    <!-- 超链接样式 -->
-    <style>
-       #post-content a {
-        font-weight: 400;
-        color: #37ad99;
-        position: relative;
-        text-decoration: #37ad99;
-         }
-      /* 添加有动画效果的下划线 */
-      #post-content a:after{
-        content: "";
-        width: 0;
-        height: 1px;
-        background: #37ad99;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transition: all .2s;
-         }
-    
-          /* 鼠标移动到连接上时显示下划线 */
-    
-          #post-content a:hover:after {
-            left: 0;
-             width: 100%;
-         }
-    
-         /* 某些元素的a标签并不需要下划线效果 */
-         .xxx>a:after {
-                 background: 0 0;
-             } 
-    </style>
 
                 <!-- Post Comments -->
                 
@@ -1364,6 +1334,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
 </script>   
 
 
+
 <!-- hexo-tag-fancybox_img 在Hexo博客文章或者单页面中加入fancybox（简易相册）--> 
 <!-- 用法：在Hexo博客的文章或者单页面中使用以下标签语法插入图片以及描述 {% fb_img src [caption] %} -->
 <!-- 例子: {% fb_img https://ws3.sinaimg.cn/large/006bYVyvly1fxxewq3plij30yn0jjkjl.jpg sakura %} -->
@@ -1388,6 +1359,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
    
     
 
+
                     
                 </main>
             </div>
@@ -1395,17 +1367,40 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     
 </html>
 
+ <!-- 使用Meeting Js播放音乐 -->
+                <!-- require APlayer -->
+                <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+                <!-- require MetingJS -->
+                <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+                <meting-js
+	            server="netease"
+                type="song"
+                id="427606780"
+                fixed="true"
+                mini="true"
+                mutex="true"
+                volume="0.7"
+                lrc-type="1"
+	            >
+             </meting-js>
 
-<!--浏览器动态标题-->
-<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+            <!--浏览器动态标题-->
+            <script type="text/javascript" src="\js\FunnyTitle.js"></script>
 
-<!--禁用鼠标右键与F12-->
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
+            <!--禁用鼠标右键与F12-->
+            <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
 
 
-<!-- 点击鼠标出现彩色颜料的爆炸效果 -->
-<script src="\js\mouse-click.js"></script>
+            <!-- 点击鼠标出现彩色颜料的爆炸效果 -->
+            <script src="\js\mouse-click.js"></script>
+
+
+
+
+
+
 
 <!-- 天气插件 -->
 <!-- <script type="text/javascript">
@@ -1419,24 +1414,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     <!-- <div id="aplayer"></div> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/APlayer.min.js"></script> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/music.js"></script> -->
-  <!-- 使用Meeting Js播放音乐 -->
-    <!-- require APlayer -->
-    <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    <!-- require MetingJS -->
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-    <meting-js
-	server="netease"
-    type="song"
-    id="427606780"
-    fixed="true"
-    mini="true"
-    mutex="true"
-    volume="0.7"
-    lrc-type="1"
-	>
-    </meting-js>
-
+ 
 
  <!-- <script src="https://cdn.jsdelivr.net/npm/pjax@VERSION/pjax.js"></script> -->
 

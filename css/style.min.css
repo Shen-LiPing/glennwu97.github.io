@@ -1,4 +1,37 @@
 html{display:block;}body{display:block;margin:0;padding:0;top:0;right:0;bottom:0;left:0;z-index:-1;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-attachment:fixed;content:'';}.fa,.material-icons{-moz-osx-font-smoothing:grayscale;}
+/* 全站超链接样式 */
+/* a {
+    font-weight: 400;
+} */
+/* <!-- 文章中超链接样式 --> */
+   #post-content a {
+    color: #37ad99;
+    position: relative;
+    text-decoration: #37ad99;
+     }
+  /* 添加有动画效果的下划线 */
+  #post-content a:after{
+    content: "";
+    width: 0;
+    height: 1.5px;
+    background: #37ad99;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .2s;
+     }
+
+      /* 鼠标移动到连接上时显示下划线 */
+
+      #post-content a:hover:after {
+        left: 0;
+         width: 100%;
+     }
+
+     /* 某些元素的a标签并不需要下划线效果 */
+     /* .xxx>a:after {
+             background: 0 0;
+         }  */
 
 
 

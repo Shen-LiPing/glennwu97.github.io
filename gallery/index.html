@@ -18,6 +18,9 @@
         ]
     </script>
 
+    <!-- 豆瓣书单手机端页面无法显示图片 -->
+    <meta name="referrer" content="no-referrer">
+
     <!-- dns prefetch -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
@@ -90,7 +93,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?WqIdFFpZ5Cu134me95+pCA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?BxxWn+ghHhckcjFByAh6BA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -550,17 +553,40 @@ code.plain, code.text {
     
 </html>
 
+ <!-- 使用Meeting Js播放音乐 -->
+                <!-- require APlayer -->
+                <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+                <!-- require MetingJS -->
+                <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+                <meting-js
+	            server="netease"
+                type="song"
+                id="427606780"
+                fixed="true"
+                mini="true"
+                mutex="true"
+                volume="0.7"
+                lrc-type="1"
+	            >
+             </meting-js>
 
-<!--浏览器动态标题-->
-<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+            <!--浏览器动态标题-->
+            <script type="text/javascript" src="\js\FunnyTitle.js"></script>
 
-<!--禁用鼠标右键与F12-->
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
+            <!--禁用鼠标右键与F12-->
+            <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
 
 
-<!-- 点击鼠标出现彩色颜料的爆炸效果 -->
-<script src="\js\mouse-click.js"></script>
+            <!-- 点击鼠标出现彩色颜料的爆炸效果 -->
+            <script src="\js\mouse-click.js"></script>
+
+
+
+
+
+
 
 <!-- 天气插件 -->
 <!-- <script type="text/javascript">
@@ -574,24 +600,7 @@ code.plain, code.text {
     <!-- <div id="aplayer"></div> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/APlayer.min.js"></script> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/music.js"></script> -->
-  <!-- 使用Meeting Js播放音乐 -->
-    <!-- require APlayer -->
-    <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    <!-- require MetingJS -->
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-    <meting-js
-	server="netease"
-    type="song"
-    id="427606780"
-    fixed="true"
-    mini="true"
-    mutex="true"
-    volume="0.7"
-    lrc-type="1"
-	>
-    </meting-js>
-
+ 
 
  <!-- <script src="https://cdn.jsdelivr.net/npm/pjax@VERSION/pjax.js"></script> -->
 

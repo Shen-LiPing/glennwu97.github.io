@@ -18,6 +18,9 @@
         ]
     </script>
 
+    <!-- 豆瓣书单手机端页面无法显示图片 -->
+    <meta name="referrer" content="no-referrer">
+
     <!-- dns prefetch -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
@@ -90,7 +93,7 @@
     <!-- Import CSS -->
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?WqIdFFpZ5Cu134me95+pCA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?BxxWn+ghHhckcjFByAh6BA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
 
@@ -687,7 +690,6 @@ code.plain, code.text {
 <h1 id="关于主题"><a href="#关于主题" class="headerlink" title="关于主题"></a>关于主题</h1><p>该主题源自主流主题<a href="https://litten.me/2014/08/31/hexo-theme-yilia/" target="_blank" rel="noopener">yilia</a>的一个子主题，我非常喜欢这个主题简约大气的风格，但是主题配置介绍内容极少，因此我花了大量的时间理解主题代码才能完全掌握这个主题的结构，所以不建议新手一上来就用这个主题，推荐使用<a href="https://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next</a>主题，主题相关目录中已经介绍的很全面了，况且是最热门的主题之一网上相关配置教程也较多，对于入门者而言易于上手。</p>
 <h1 id="近期展望"><a href="#近期展望" class="headerlink" title="近期展望"></a>近期展望</h1><p>待参加完<a href="https://baike.baidu.com/item/%E7%BE%8E%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B/8324806?fromtitle=%E6%95%B0%E6%A8%A1%E7%BE%8E%E8%B5%9B&fromid=16323396&fr=aladdin" target="_blank" rel="noopener">MCM</a>考完<a href="https://zhidao.baidu.com/question/92968602.html" target="_blank" rel="noopener">GRE</a>后会抽时间写一个站点配置心得，把建站过程中碰到过比较常见坑和我的建站思路跟大家分享下。</p>
 
-
        
 
         
@@ -721,38 +723,6 @@ code.plain, code.text {
                   <br />
                   <br />
 
-                    <!-- 超链接样式 -->
-    <style>
-       #post-content a {
-        font-weight: 400;
-        color: #37ad99;
-        position: relative;
-        text-decoration: #37ad99;
-         }
-      /* 添加有动画效果的下划线 */
-      #post-content a:after{
-        content: "";
-        width: 0;
-        height: 1px;
-        background: #37ad99;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transition: all .2s;
-         }
-    
-          /* 鼠标移动到连接上时显示下划线 */
-    
-          #post-content a:hover:after {
-            left: 0;
-             width: 100%;
-         }
-    
-         /* 某些元素的a标签并不需要下划线效果 */
-         .xxx>a:after {
-                 background: 0 0;
-             } 
-    </style>
 
                 <!-- Post Comments -->
                 
@@ -1369,6 +1339,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
 </script>   
 
 
+
 <!-- hexo-tag-fancybox_img 在Hexo博客文章或者单页面中加入fancybox（简易相册）--> 
 <!-- 用法：在Hexo博客的文章或者单页面中使用以下标签语法插入图片以及描述 {% fb_img src [caption] %} -->
 <!-- 例子: {% fb_img https://ws3.sinaimg.cn/large/006bYVyvly1fxxewq3plij30yn0jjkjl.jpg sakura %} -->
@@ -1393,6 +1364,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
    
     
 
+
                     
                 </main>
             </div>
@@ -1400,17 +1372,40 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     
 </html>
 
+ <!-- 使用Meeting Js播放音乐 -->
+                <!-- require APlayer -->
+                <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+                <!-- require MetingJS -->
+                <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+                <meting-js
+	            server="netease"
+                type="song"
+                id="427606780"
+                fixed="true"
+                mini="true"
+                mutex="true"
+                volume="0.7"
+                lrc-type="1"
+	            >
+             </meting-js>
 
-<!--浏览器动态标题-->
-<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+            <!--浏览器动态标题-->
+            <script type="text/javascript" src="\js\FunnyTitle.js"></script>
 
-<!--禁用鼠标右键与F12-->
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
+            <!--禁用鼠标右键与F12-->
+            <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>
 
 
 
-<!-- 点击鼠标出现彩色颜料的爆炸效果 -->
-<script src="\js\mouse-click.js"></script>
+            <!-- 点击鼠标出现彩色颜料的爆炸效果 -->
+            <script src="\js\mouse-click.js"></script>
+
+
+
+
+
+
 
 <!-- 天气插件 -->
 <!-- <script type="text/javascript">
@@ -1424,24 +1419,7 @@ mediumZoom(document.querySelectorAll('#post-content img'), {
     <!-- <div id="aplayer"></div> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/APlayer.min.js"></script> -->
     <!-- <script type="text/javascript" src="/aplayer_dist/music.js"></script> -->
-  <!-- 使用Meeting Js播放音乐 -->
-    <!-- require APlayer -->
-    <link rel="stylesheet" href="/aplayer_dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    <!-- require MetingJS -->
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-    <meting-js
-	server="netease"
-    type="song"
-    id="427606780"
-    fixed="true"
-    mini="true"
-    mutex="true"
-    volume="0.7"
-    lrc-type="1"
-	>
-    </meting-js>
-
+ 
 
  <!-- <script src="https://cdn.jsdelivr.net/npm/pjax@VERSION/pjax.js"></script> -->
 
