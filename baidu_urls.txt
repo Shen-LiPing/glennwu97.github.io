@@ -1,4 +1,3 @@
-https://blog.glennwu.info/2020/05/02/DigitalFundamentals/
 https://blog.glennwu.info/2020/04/06/Visual-Studio-Code-Arduino/
 https://blog.glennwu.info/2020/03/23/My-first-drone/
 https://blog.glennwu.info/2020/03/16/1P3A-Daily-Problem/
