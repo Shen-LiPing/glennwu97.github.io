@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.glennwu.info/comment/index.html</loc>
+    
+    <lastmod>2020-09-30T16:49:39.652Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.glennwu.info/game-list/index.html</loc>
+    
+    <lastmod>2020-09-30T16:48:52.722Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.glennwu.info/2020/09/29/How-to-pass-GRE/</loc>
     
     <lastmod>2020-09-30T11:22:47.810Z</lastmod>
@@ -128,23 +142,9 @@
   </url>
   
   <url>
-    <loc>https://blog.glennwu.info/game-list/index.html</loc>
-    
-    <lastmod>2020-04-09T12:51:12.239Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.glennwu.info/2019/02/12/Hexo-Basic-Operations-01/</loc>
     
     <lastmod>2020-04-01T04:06:21.449Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.glennwu.info/comment/index.html</loc>
-    
-    <lastmod>2020-03-15T15:45:45.639Z</lastmod>
     
   </url>
   
